@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Roboto-Reg;
+    src: url(../fonts/roboto/RobotoSlab-Regular.ttf);
+
+    font-family: Montserrat-Reg;
+    src: url(../fonts/monsterratt/Montserrat-Regular.ttf);
+}
+
+body{
+    background: #E4EAFF;
+}
+
+header{
+    background-image: url(../img/Img.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container-header{
+    width: 100%;
+    height: 15vh;
+    background-color: #C9D5FF;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    font-family: Roboto-Reg;
+}
+.container-header p {
+    font-size: 18px;
+}
+
+.words{
+    gap: 74px;
+}
+
+
