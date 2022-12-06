@@ -13,21 +13,21 @@
     <script src="./js/uikit.min.js"></script>
     <script src="./js/uikit-icons.min.js"></script>
 </head>
-<body>
-     <header>
-        <div class="container-header">
+<body id="body">
+     <header id="mainHeader">
+        <div id="header" class="container-header">
             <div class="header-div">
                 <div style="font-family: Roboto-Reg;" class="d-flex justify-content-around justify-content-center align-items-center">
                         <div class="d-flex words word1">
                             <p class="mt-2">Головна</p>
                             <p class="mt-2">Випускники</p>
                         </div>
-                        <img class="" style="width: 80px; height: 80px;" src="./img/turn-on2.svg" alt="">
+                        <img onclick="DarkTheme()" id="lamp" class="" style="width: 80px; height: 80px;" src="./img/turn-on2.svg" alt="">
                         <div class="d-flex words word2 ">
                             <p class="mt-2">Хакери</p>
                             <p class="mt-2">Контакти</p>
                             <div class="dropdown mt-2">
-                                <button style="background: none; border: none; color: black;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button id="lang" style="background: none; border: none; color: black;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   UA
                                 </button>
                                 <ul class="dropdown-menu">
@@ -70,11 +70,11 @@
 
     
     <div style="margin-top: 240px; width: 100%; font-family: Montserrat-Reg; color: white;" class="students-slider">
-            <div class="slider">
+            <div id="slider-s" class="slider">
                  <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div style="color: black; background: none;" class="swiper-slide d-flex flex-column">
+          <div style="background: none;" class="swiper-slide d-flex flex-column">
             <h2 style="font-size: 40px;">Наші студенти</h2>
             <p style="font-size: 20px;">Фото картки наших студентів </p>
 
@@ -205,7 +205,7 @@
         </div>
 
         <div style="margin-top: 240px; width: 100%; font-family: Montserrat-Reg; color: white;" class="students-slider">
-            <div class="slider">
+            <div id="slider-l" class="slider">
                  <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -311,7 +311,7 @@
                 <a href=""><p>Дізнатися більше ➤</p></a>
             </div>
           </div>
-          <div style="color: black; background: none;" class="swiper-slide d-flex flex-column">
+          <div style="background: none;" class="swiper-slide d-flex flex-column">
             <h2 style="font-size: 40px;">Наші випускники</h2>
             <p style="font-size: 20px;">Фото картки наших випускників</p>
 
@@ -386,7 +386,7 @@
 
     </main>
 
-    <footer style="margin-top: 240px; font-family: Roboto-Reg; font-size: 18px;">
+    <footer id="footer" style="margin-top: 240px; font-family: Roboto-Reg; font-size: 18px;">
         <hr>
         <div style="gap: 10px;" class="d-flex justify-content-center">
             <p>INTITA © 2022</p>

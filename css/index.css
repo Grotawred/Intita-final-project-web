@@ -6,7 +6,7 @@
     src: url(../fonts/monsterratt/Montserrat-Regular.ttf);
 }
 
-a:hover{
+/* a:hover{
   color: white !important;
 }
 
@@ -17,11 +17,16 @@ footer a:hover{
 footer a{
   text-decoration: none;
   color: black;
+} */
+
+a{
+  text-decoration: none !important;
+  color: white;
 }
 
 
 body{
-    background: #E4EAFF !important;
+    background: #E4EAFF;
 }
 
 header{
@@ -58,6 +63,7 @@ header{
 
 #moreBut:hover{
     background: #050514 !important;
+    color: white !important;
 }
 
 html,
@@ -153,4 +159,8 @@ html,
       .carousel-item img{
         width: 70vh;
         height: 70vh;
+      }
+
+      .slider{
+        color: black;
       }
