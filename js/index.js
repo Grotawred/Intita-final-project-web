@@ -135,7 +135,7 @@ function DarkTheme(){
         document.getElementById('body').style.backgroundColor = "#C9D5FF"; 
         document.getElementById('body').style.color = "black";
         document.getElementById('moreBut').style.backgroundColor = "#1B1F2F";
-        document.getElementById('moreBut').style.color = "black";
+        document.getElementById('moreBut').style.color = "white";
         document.getElementById('slider-s').style.color = "black";
         document.getElementById('slider-l').style.color = "black";
         document.getElementById('footer').style.color = "black !important";
