@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Roboto-Reg;
+    src: url(../fonts/roboto/RobotoSlab-Regular.ttf);
+
+    font-family: Montserrat-Reg;
+    src: url(../fonts/monsterratt/Montserrat-Regular.ttf);
+}
+
+/* a:hover{
+  color: white !important;
+}
+
+footer a:hover{
+  color: black !important;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+} */
+
+a{
+    text-decoration: none !important;
+    color: white;
+}
+
+
+body{
+    background: #E4EAFF;
+}
+
+header{
+    background-image: url(../img/Img.png);
+    background-size: cover;
+    height: 802px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container-header{
+    width: 100%;
+    height: 100px;
+    background-color: #C9D5FF;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    font-family: Roboto-Reg;
+}
+.container-header p {
+    font-size: 20px;
+}
+
+.words{
+    gap: 74px;
+}
+
+#searchBut{
+    background: #1B1F2F;
+}
+
+#searchBut:hover{
+    background: #050514;
+}
+
+#moreBut:hover{
+    background: #050514 !important;
+    color: white !important;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.students-slider h6{
+    font-size: 20px;
+}
+
+.students-slider p{
+    font-size: 12px;
+}
+
+.students-slider a{
+    text-decoration: none;
+    color: white;
+}
+
+.explain{
+    border-radius: 11px;
+    animation-duration: 2s;
+    animation-iteration-count: revert;
+    transform-origin: bottom;
+    animation-iteration-count: initial;
+}
+
+.explain:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+    visibility: visible;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(-50px); }
+}
+
+
+.swiper-slide{
+    border-radius: 11px;
+    height: 40vh;
+}
+
+.info p{
+    visibility: hidden;
+}
+
+.carousel-item img{
+    width: 70vh;
+    height: 70vh;
+}
+
+.slider{
+    color: black;
+}
