@@ -1,0 +1,41 @@
+html{
+	width: 100%
+	max-width:100%;
+	overflow-x: hidden;
+}
+
+body{
+	margin: 0;
+	background-color: #111524; 
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+.conteiner{
+	width: 802px;
+}
+ul{
+	list-style-type: none;
+	align-items: center;
+	margin-top: 36px;
+
+}
+.navbar li{
+	margin-right: 88px;
+	font-size: 16px;
+	color: #fff;
+}
+.navbar li:hover{
+	text-shadow: 0px 2px 20px rgba(255, 255, 255, 0.7);
+
+}
+.socials{
+	margin: 0px;
+	padding: 0px;
+}
+.socials li{
+	display: inline;	
+}
+.socials li img{
+	width: 48px;
+	height: 48px;
+}
