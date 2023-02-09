@@ -7,29 +7,36 @@
     <title>INTITA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="./js/index.js"></script>
 </head>
 <body>
     <a href="#header"><img class="toTopBut" src="./img/to_top_but.png"></a>
     <header id="header">
-        <div class="d-flex justify-content-center mt-4" style="width: 100%; color: white; gap: 88px; font-size: 16px; font-family: Monts;">
-            <p>Головна</p>
-            <p>Випускники</p>
-            <p>Хакери</p>
-            <p>Контакти</p>
+        <div class="d-flex justify-content-center mt-4 menu-words" style="width: 100%; color: white; gap: 88px; font-size: 16px; font-family: Monts;">
+            <a href=""><p>Головна</p></a>
+            <a href="#graduate"><p>Випускники</p></a>
+            <a href="#student"><p>Хакери</p></a>
+            <a href="#footer"><p>Контакти</p></a>
             <div class="dropdown">
-                <button id="lang" style="background: none; border: none;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    UA
+                <button class="btn btn-secondary dropdown-toggle btn-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  UA
                 </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">EN</a></li>
-            </ul>
-            </div>
-            <img width="24px" height="24px" src="./img/search.png" alt="">
+                <ul style="min-width: 64px; border-radius: 10px;" class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">en</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </div>
+              <button style="margin-bottom: 15px;" class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img width="24px" height="24px" src="./img/search.png" alt="">
+              </button>
+              <div style="position: absolute; margin-top: 50px;" class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <input style="width: 866px; height: 56px; background-color: #C9D5FF; border-radius: 10px; border: none; font-size: 24px;" type="text">
+                  <img style="position: absolute; margin-left: 825px; margin-top: 15px;" width="24px" height="24px" src="./img/search_black.png" alt="">
+                </div>
+              </div>
         </div>
         <div class="d-flex justify-content-center align-items-center" style="margin-top: 156px; width: 100%;">
             <div style="color: white; width: 30%; margin-left: 250px;">
@@ -37,7 +44,50 @@
                 <h3 style="font-size: 24px; font-family: Monts;">Навчайся разом з нами</h3>
                 <h3 style="font-size: 24px; font-family: Monts;">Досягай професійного успіху - гарантовано!</h3>
                 <div class="d-flex justify-content-between mt-5">
-                    <button style="background-image: linear-gradient(to right, #A1C4FD , #C2E9FB); border: none; border-radius: 10px; width: 192px; height: 48px; font-family: Monts; font-size: 20px;">Зателефонувати</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-image: linear-gradient(to right, #A1C4FD , #C2E9FB); border: none; border-radius: 10px; width: 192px; height: 48px; font-family: Monts; font-size: 20px; color: black;">Зателефонувати</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div style="background: #A1C4FD;" class="modal-content">
+                            <div style="border: none;" class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div style="color: black; font-family: Monts; width: 508px; height: 480px;" class="modal-body">
+                              <h1 style="font-size: 32px; text-align: center;">Заповнення форми</h1>
+                              <div style="gap: 20px;" class="d-flex justify-content-center mt-5 flex-column align-items-center">
+                                <input style="font-size: 20px; width: 387px; height: 48px; border-radius: 10px;" placeholder="Ім'я" type="text">
+                                <input style="font-size: 20px; width: 387px; height: 48px; border-radius: 10px;" placeholder="Прізвище" type="text">
+                              </div>
+                              <p class="mt-4" style="font-size: 20px; margin-left: 25px;">В якій годині зателефонувати?</p>
+                              <div>
+                                <div class="dropdown">
+                                    <div class="d-flex justify-content-around">
+                                        <button class="d-flex justify-content-between" style="width: 160px; border-radius: 10px; border: none; height: 48px; background: white;" data-bs-toggle="dropdown"> 
+                                            <p style="font-size: 16px; color: #30CFD0; margin-top: 10px;">09:00</p>
+                                            <img style="margin-top: 8px;" src="./img/arrow.png" alt="">
+                                        </button>
+                                        <img class="mt-4" width="24px" height="4px" src="./img/line.png" alt="">
+                                        <button class="d-flex justify-content-between" style="width: 160px; border-radius: 10px; border: none; height: 48px; background: white;" data-bs-toggle="dropdown"> 
+                                            <p style="font-size: 16px; color: #30CFD0; margin-top: 10px;">09:00</p>
+                                            <img style="margin-top: 8px;" src="./img/arrow.png" alt="">
+                                        </button>
+                                    <ul style="min-width: 60px; font-size: 16px;" class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">10:00</a></li>
+                                      <li><a class="dropdown-item" href="#">11:00</a></li>
+                                      <li><a class="dropdown-item" href="#">12:00</a></li>
+                                      <li><a class="dropdown-item" href="#">13:00</a></li>
+                                      <li><a class="dropdown-item" href="#">14:00</a></li>
+                                      <li><a class="dropdown-item" href="#">15:00</a></li>
+                                      <li><a class="dropdown-item" href="#">16:00</a></li>
+                                      <li><a class="dropdown-item" href="#">17:00</a></li>
+                                    </ul>
+                                    </div>
+                                  </div>
+                              </div>
+                              <button class="mt-5" style="width: 149px; height: 48px; background-image: linear-gradient(to right,#30CFD0,#330867); color: white; border-radius: 10px; border: none; margin-left: 25px;">Надіслати</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <div style="gap: 9px; margin-right: 40px;">
                         <button style="background-image: linear-gradient(to right, #A1C4FD , #C2E9FB); border: none; border-radius: 10px; width: 48px; height: 48px;"><img src="./img/instagram.png" alt=""></button>
                         <button style="background-image: linear-gradient(to right, #A1C4FD , #C2E9FB); border: none; border-radius: 10px; width: 48px; height: 48px;"><img src="./img/facebook.png" alt=""></button>
@@ -51,334 +101,386 @@
     </header>
 
 
-    <main style="width: 100%; margin-top: 240px;">
-        <div style="width: 100%; height: 486px;">
-        <div style="width: 80%; font-family: Monts; font-size: 20px;" class="swiper mySwiper ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide1 d-flex justify-content-start">
-                <div style="background-color: #C2E9FB; width: 50%; height: 100%;">
-                    <div class="mt-3">
-                        <p>day/s month | city</p>
-                    </div>
-                    <div style="height: 100%;" class="d-flex align-items-center justify-content-center">
-                    <div>
-                        <p>Event's name</p>
-                        <p>event's info</p>
-                    </div>
-                    </div>
+    <main style="width: 100%;">
+      <div id="infoBottom" class="d-flex slide-bottom" style="position: absolute; z-index: -1; margin-top: 520px; margin-left: 460px; visibility: hidden;">
+        <div class=" d-flex align-items-center justify-content-center" style="width: 945px; height: 72px; background: #C9D5FF; border-radius: 10px; font-size: 20px; font-family: Monts;">
+          <p>Коротка інформація про захід</p>
+        </div>
+      </div>
+        <div class="slider">
+          <h1 style="font-family: Nova; font-size: 48px; text-align: center; color: white;">Заходи</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div onmouseover="showInfo()" onmouseleave="hideInfo()" class="swiper-slide d-flex justify-content-center">
+                    <img src="./img/slide.png" alt="">
+                  </div>
+                  <div onmouseover="showInfo()" onmouseleave="hideInfo()" class="swiper-slide d-flex justify-content-center"><img src="./img/Slide2.png" alt=""></div>
+                  <div onmouseover="showInfo()" onmouseleave="hideInfo()" class="swiper-slide d-flex justify-content-center"><img src="./img/slide3.png" alt=""></div>
+                  <!-- <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div> -->
                 </div>
+                <div onmouseover="showInfo()" onmouseleave="hideInfo()" class="swiper-pagination"></div>
               </div>
-              <div class="swiper-slide slide2 d-flex justify-content-start">
-                <div style="background-color: #C2E9FB; width: 50%; height: 100%;">
-                    <div class="mt-3">
-                        <p>day/s month | city</p>
-                    </div>
-                    <div style="height: 100%;" class="d-flex align-items-center justify-content-center">
-                    <div>
-                        <p>Event's name</p>
-                        <p>event's info</p>
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide slide3 d-flex justify-content-start">
-                <div style="background-color: #C2E9FB; width: 50%; height: 100%;">
-                    <div class="mt-3">
-                        <p>day/s month | city</p>
-                    </div>
-                    <div style="height: 100%;" class="d-flex align-items-center justify-content-center">
-                    <div>
-                        <p>Event's name</p>
-                        <p>event's info</p>
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">Slide 4</div> -->
-            </div>
-          </div>
-      
-          <!-- Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              direction: "vertical",
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-            });
-          </script>
-          </div>
-          <div style="width: 100%; height: 140px;">
-          <div style="width: 80%; font-family: Monts; font-size: 20px;" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div style="gap: 1px;" class="swiper-slide">
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-              </div>
-              <div style="gap: 1px;" class="swiper-slide">
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-                <div class="slide-small d-flex align-items-center justify-content-center flex-column">
-                    <p>day/s</p>
-                    <p>month</p>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">Slide 3</div> -->
-            </div>
-          </div>
-      
-          <!-- Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              spaceBetween: 30,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-            });
-          </script>
-          </div>
-          <div style="margin-top: 230px;">
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                      return '<span  class="' + className + '">' + (10.09) + "|" + "</span>";
+                    },
+                  },
+                });
+              </script>
+        </div>
+          <div id="student" style="margin-top: 235px;">
+            <h1 class="mb-5" style="font-family: Nova; font-size: 48px; text-align: center; color: white;">Хакери</h1>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="car-item">
-                        <div class="card-text d-flex align-items-center justify-content-center flex-column">
-                            <h2 style="font-size: 40px; font-family: Nova;">Хакери</h2>
-                            <p style="font-size: 20px; font-family: Monts;">Фотокартки</p>
-                            <p style="font-size: 20px; font-family: Monts;">наших студентів</p>
-                        </div>
                         <div class="card-stud card1">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Власко Григорій</p>
-                                <p style="margin-left: 23px;" class="mt-5"><a href="student-page1.html">Дізнатися більше ➤</a></p>
+                          <img src="./img/Vova_small.png" alt="">
+                          <div class="d-flex justify-content-center mt-3">
+                            <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                              <p>Ратинський Володимир</p>
                             </div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                          </div>
+                          <div style="margin-left: 34px; gap: 6px;" class="d-flex mt-2">
+                            <p>Дізнатися більше</p>
+                            <img style="width: 43px; height: 20px; margin: 0;" src="./img/arrow_right.png" alt="">
+                          </div>
                         </div>
                         <div class="card-stud card2">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Ратинський Володимир</p>
-                                <a href="student-page2.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
+                          <img src="./img/Grisha_small.png" alt="">
+                          <div class="d-flex justify-content-center mt-3">
+                            <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                              <p>Власко Григорій</p>
                             </div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                          </div>
+                          <div style="margin-left: 34px; gap: 6px; margin-top: 45px;" class="d-flex ">
+                            <p>Дізнатися більше</p>
+                            <img style="width: 43px; height: 20px; margin: 0;" src="./img/arrow_right.png" alt="">
+                          </div>
                         </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="car-item">
                         <div class="card-stud card3">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Механічева Олександра</p>
-                                <a href="student-page3.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
+                          <img src="./img/Sasha_small.png" alt="">
+                          <div class="d-flex justify-content-center mt-3">
+                            <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                              <p>Механічева Олександра</p>
                             </div>
-                        </div>
-                        <div class="card-stud card4">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Єгор Федчишин</p>
-                                <a href="student-page4.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
-                            </div>
-                        </div>
-                        <div class="card-stud card5">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Діана Франишина</p>
-                                <a href="student-page5.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
-                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                          </div>
+                          <div style="margin-left: 34px; gap: 6px;" class="d-flex mt-2">
+                            <p>Дізнатися більше</p>
+                            <img style="width: 43px; height: 20px; margin: 0;" src="./img/arrow_right.png" alt="">
+                          </div>
                         </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="car-item">
-                        <div class="card-stud card6">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Тимофій Бобрук</p>
-                                <a href="student-page6.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
-                            </div>
+                      <div class="card-stud card4">
+                        <img src="./img/Danilo_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Даніл Гурський</p>
+                          </div>
                         </div>
-                        <div class="card-stud card7">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Даніл Гурський</p>
-                                <a href="student-page7.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
-                            </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
                         </div>
-                        <div class="card-stud card8">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Костя Гавриш</p>
-                                <a href="student-page8.html"><p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p></a>
-                            </div>
+                        <div style="margin-left: 34px; gap: 6px; margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0;" src="./img/arrow_right.png" alt="">
                         </div>
+                      </div>
+                      <div class="card-stud card5">
+                        <img src="./img/Tima_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Тимофій Бобрук</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px; margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0;" src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud card6">
+                        <img src="./img/Kostya_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Костя Гавриш</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px; margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="car-item">
+                      <div class="card-stud card7">
+                        <img src="./img/Egor_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Федчишин Єгор</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px; margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud card8">
+                        <img src="./img/Diana_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Франишина Діана</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud card10">
+                        <img src="./img/Nastya_small.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Кравчук Анастасія</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
+                </button> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="background: none; border: none;">
+                  <img src="./img/button_slider_left.png" alt="">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="background: none; border: none;">
+                  <img src="./img/button_slider_right.png" alt="">
                 </button>
               </div>
           </div>
 
-          <div style="margin-top: 230px;">
+          <div id="graduate" style="margin-top: 235px;">
+            <h1 class="mb-5" style="font-family: Nova; font-size: 48px; text-align: center; color: white;">Випускники</h1>
             <div id="carouselExample2" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="car-item">
-                        <div class="card-stud card1">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Власко Григорій</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
                         </div>
-                        <div class="card-stud card2">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Ратинський Володимир</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
                         </div>
-                        <div class="card-text d-flex align-items-center justify-content-center flex-column">
-                            <h2 style="font-size: 40px; font-family: Nova;">Випускники</h2>
-                            <p style="font-size: 20px; font-family: Monts;">Фотокартки</p>
-                            <p style="font-size: 20px; font-family: Monts;">наших випускників</p>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
                         </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="car-item">
-                        <div class="card-stud card3">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Механічева Олександра</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
                         </div>
-                        <div class="card-stud card4">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Єгор Федчишин</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
                         </div>
-                        <div class="card-stud card5">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Діана Франишина</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
                         </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="car-item">
-                        <div class="card-stud card6">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Тимофій Бобрук</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
                         </div>
-                        <div class="card-stud card7">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Даніл Гурський</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
                         </div>
-                        <div class="card-stud card8">
-                            <div class="cardlow">
-                                <p class="mt-2" style="font-size: 20px; text-align: center;">Костя Гавриш</p>
-                                <p style="margin-left: 23px;" class="mt-5">Дізнатися більше ➤</p>
-                            </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
                         </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-stud test-card">
+                        <img src="./img/void.png" alt="">
+                        <div class="d-flex justify-content-center mt-3">
+                          <div style="width: 213px; border-radius: 10px; background: #30CFD0; font-size: 24px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <p>Ім’я Прізвище</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <img style="width: 28px; height: 129px;" src="./img/quote.png" alt="">
+                        </div>
+                        <div style="margin-left: 34px; gap: 6px;  margin-top: 45px !important;" class="d-flex mt-2">
+                          <p>Дізнатися більше</p>
+                          <img style="width: 43px; height: 20px; margin: 0; " src="./img/arrow_right.png" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
+                </button> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev" style="background: none; border: none;">
+                  <img src="./img/button_slider_left.png" alt="">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next" style="background: none; border: none;">
+                  <img src="./img/button_slider_right.png" alt="">
                 </button>
               </div>
           </div>
 
     </main>
-    <footer style="font-family: Monts; margin-top: 230px;">
+    <footer id="footer" style="font-family: Monts; margin-top: 235px;">
         <div style="margin-left: 173px; margin-top: 30px;">
             <h2>Інформація</h2>
             <p>Головна</p>

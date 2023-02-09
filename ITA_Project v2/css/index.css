@@ -6,42 +6,70 @@
     src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
 }
 
+
 body{
     background-color: #111524;
     margin: 0;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+.swiper-slide {
+  font-size: 18px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+.swiper-slide img {
+  display: block;
+  width: 945px;
+  height: 531px;
+  object-fit: cover;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  gap: 15px;
+  background: none;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #30CFD0;
+  background: none
+}
+
+.swiper-pagination{
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  gap: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: white;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  /* margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px); */
+  width: 2px;
+  height: 20px;
+  background: none;
+}
 
   .slide1{
     background-image: url(../img/slider_img1.png);
@@ -66,18 +94,22 @@ body{
   }
 
   .card-stud{
-    width: 299px;
-    height: 428px;
-    border-radius: 11px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse;
-
+    width: 298px;
+    height: 470px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #A1C4FD , #C2E9FB);
+    font-family: Monts;
   }
 
-  .card1{
-    background-image: url(../img/Grisha.png);
+  .card-stud img{
+    width: 156px;
+    height: 156px;
+    border-radius: 150px;
+    margin-left: 16px;
+    margin-top: 16px;
   }
+
+
 
   .cardlow{
     width: 100%;
@@ -87,9 +119,6 @@ body{
     font-family: Monts;
   }
 
-  .card2{
-    background-image: url(../img/Vova.png);
-  }
 
   .car-item{
     display: flex;
@@ -103,25 +132,7 @@ body{
     color: white;
   }
 
-  .card3{
-    background-image: url(../img/Sasha.png);
-  }
 
-  .card4{
-    background-image: url(../img/Egor.png);
-  }
-  .card5{
-    background-image: url(../img/Diana.png);
-  }
-  .card6{
-    background-image: url(../img/Tima.png);
-  }
-  .card7{
-    background-image: url(../img/Danilo.png);
-  }
-  .card8{
-    background-image: url(../img/Kostya.png);
-  }
 
   footer{
     background-color: #A1C4FD;
@@ -149,6 +160,78 @@ body{
     text-decoration: none;
     color: black;
   }
+
+  .menu-words p:hover{
+    color: #30CFD0;
+  }
+
+  .menu-words p{
+    color: white;
+    margin-top: 5px;
+  }
+
+   .btn-lang{
+    background: none;
+    border: none;
+  }
+
+   .btn-lang:hover{
+    background: none;
+  }
+
+  header{
+    height: 100vh;
+  }
+
+  .btn-img{
+    background: none;
+    border: none;
+  }
+
+  .btn-img:hover{
+    background: none;
+    cursor: pointer;
+  }
+
+  .card-body{
+    background: none;
+    border: none;
+  }
+
+  .modal-body input{
+    border: none;
+  }
+
+  .slide-bottom:focus {
+    /* animation-duration: 1s;
+    transform-origin: bottom;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out; */
+    animation: bounce 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .swiper-slide img:hover > .slide-bottom{
+    animation: bounce 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(75px); }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(-75px);
+  }
+}
+
 
 
 
