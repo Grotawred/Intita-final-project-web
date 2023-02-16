@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Nova;
+    src: url("../fonts/NovaSquare/NovaSquare-Regular.ttf");
+
+    font-family: Monts;
+    src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
+}
+
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 738px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #E3F6F6;
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 758px;
+  height: 479px;
+}
+
+.swiper h2{
+  color: #30CFD0;
+  font-size: 32px;
+}
+
+.swiper p{
+  font-size: 20px;
+  text-align: left;
+}
+
+  .slide1{
+    background-image: url(../img/slider_img1.png);
+    background-size: cover;
+  }
+
+  .slide2{
+    background-image: url(../img/slider_img2.png);
+    background-size: cover;
+  }
+
+  .slide3{
+    background-image: url(../img/slider_img3.png);
+    background-size: cover;
+  }
+
+  .slide-small{
+    background-color: #303753;
+    width: 10%;
+    height: 100%;
+    color: white;
+  }
+
+  .card-stud{
+    width: 298px;
+    height: 470px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #A1C4FD , #C2E9FB);
+    font-family: Monts;
+  }
+
+  .card-stud img{
+    width: 156px;
+    height: 156px;
+    border-radius: 150px;
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+
+
+  .cardlow{
+    width: 100%;
+    height: 125px;
+    background: linear-gradient(#A1C4FD,#C2E9FB);
+    border-radius: 10px;
+    font-family: Monts;
+  }
+
+
+  .car-item{
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+  }
+
+  .card-text{
+    width: 299px;
+    height: 428px;
+    color: white;
+  }
+
+
+
+
+
+  .toTopBut{
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu-words p:hover{
+    color: #30CFD0;
+  }
+
+  .menu-words p{
+    color: #1B1F2F;
+    margin-top: 5px;
+  }
+
+   .btn-lang{
+    background: none;
+    border: none;
+  }
+
+   .btn-lang:hover{
+    background: none;
+  }
+
+  header{
+    height: 100vh;
+  }
+
+  .btn-img{
+    background: none;
+    border: none;
+  }
+
+  .btn-img:hover{
+    background: none;
+    cursor: pointer;
+  }
+
+  .card-body{
+    background: none;
+    border: none;
+  }
+
+  .modal-body input{
+    border: none;
+  }
+
+  .slide-bottom:focus {
+    /* animation-duration: 1s;
+    transform-origin: bottom;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out; */
+    animation: bounce 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .swiper-slide img:hover > .slide-bottom{
+    animation: bounce 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(75px); }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(-75px);
+  }
+}
+
+.mg{
+  margin-top: 35px;
+}
+
+.main-word{
+  color: #30CFD0 !important;
+}
+
+.info-container{
+  gap: 53px;
+  margin-top: 90px;
+}
+
+ #student h2{
+  font-size: 36px;
+  background: -webkit-linear-gradient(right,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-text:hover{
+  color: #30CFD0 !important;
+}
+
+
+
+
+
+
+
+
