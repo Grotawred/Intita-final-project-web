@@ -248,7 +248,8 @@ body{
 
 .slider{
   height: 550px;
-  margin-left: 300px;
+  margin-left: 100px;
+
 }
 
 .first_part{
@@ -256,22 +257,24 @@ body{
   background: #E3F6F6;
 }
 
+
 .slider_text h1{
   color: #30CFD0;
 
 }
 
-.first_main_part{
+/* .first_main_part{
   gap: 700px;
-}
+} */
 
 .slider_text{
   width: 30%;
+  margin-right: 100px;
 }
 
 .more_btn{
   position: absolute;
-  margin-left: 950px;
+  margin-left: 733px;
   margin-top: 400px;
   z-index: 99;
 }
