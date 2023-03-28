@@ -12,6 +12,7 @@ body{
     background: #DCF2F4;
 }
 
+
 .to-top-but{
     background: none;
     border: none;
@@ -458,4 +459,7 @@ a{
     text-decoration: underline;
 }
 
+#call-us input::placeholder{
+    padding-left: 10px;
+}
 

@@ -160,6 +160,7 @@ body{
   .btn-img{
     background: none;
     border: none;
+    margin-top: 20px;
   }
 
   .btn-img:hover{
@@ -207,7 +208,7 @@ body{
 }
 
 .mg{
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 
@@ -572,6 +573,10 @@ main{
   font-size: 24px;
 }
 
+.contact-field::placeholder{
+  padding-left: 10px;
+}
+
 .call-text{
   font-size: 24px; 
   text-align: center; 
@@ -790,6 +795,7 @@ footer{
 
 .mobileNum-text{
   margin-top: 15px;
+  color: #fff;
 }
 
 .email-div{
@@ -800,4 +806,12 @@ footer{
 
 .userIcon{
   margin-top: 10px;
+}
+
+.email-text{
+  color: #fff;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #1B1F2F;
 }
