@@ -10,7 +10,7 @@
 
 
 body{
-    background-color: white;
+    background-color: #FBFCFF;
     margin: 0;
 }
 
@@ -250,7 +250,6 @@ body{
 .slider{
   height: 550px;
   margin-left: 100px;
-
 }
 
 .first_part{
@@ -261,7 +260,6 @@ body{
 
 .slider_text h1{
   color: #30CFD0;
-
 }
 
 /* .first_main_part{
@@ -312,7 +310,7 @@ body{
 .figure2{
   width: 204px; 
   height: 82px; 
-  background: #30CFD0; 
+  background: #1d9595; 
   border-bottom-right-radius: 70px;
 }
 
@@ -714,6 +712,7 @@ main{
   color: #30CFD0;
   border: none;
   cursor: pointer;
+  font-size: 27px;
 }
 
 
@@ -815,3 +814,4 @@ footer{
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
   background: #1B1F2F;
 }
+
