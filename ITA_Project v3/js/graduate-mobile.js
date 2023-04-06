@@ -8,19 +8,11 @@ function checkMobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         // true for mobile device
         console.log("mobile device");
-        window.location.href = "./graduate-page-mobile.html"//Link to mobile version;
-        return true;
+        return false;
       }else{
         // false for not mobile device
         console.log("not mobile device");
-        return false;
+        window.location.href = "./graduate-page.html"; //Link to desktop version
+        return true;
       }
-}
-
-function hoverMoreArrowLocation(el,isTrue){
-    if(isTrue){
-        el.src="./img/arrow-location-hover.png";
-    }else{
-        el.src="./img/location-arrow.png";
-    }
 }

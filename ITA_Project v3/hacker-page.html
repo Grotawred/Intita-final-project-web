@@ -14,12 +14,15 @@
 
     <!-- Header -->
     <header id="header">
-        <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
-          <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
-            <a href="index.html"><p class="mg">Головна</p></a>
-            <a class="mg" href="index.html#graduate"><p>Випускники</p></a>
-            <a class="mg main-head" href="index.html#student"><p>Студенти</p></a>
-            <a class="mg" href="index.html#Contacts"><p>Контакти</p></a>
+      <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
+        <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
+        <div class="main-words d-flex">
+            <p class="mg main-word">Головна</p>
+            <a class="mg" href="#graduate"><p>Випускники</p></a>
+            <a class="mg" href="#student"><p>Студенти</p></a>
+            <a class="mg" href="#Contacts"><p>Контакти</p></a>
+          </div>
+          <div class="d-flex lang-and-search">
             <div class="dropdown">
                 <button class="btn-lang mg" data-bs-toggle="dropdown">
                   <img src="./img/UAflag.png" alt="uaFlag">
@@ -33,13 +36,14 @@
               <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
               </button>
-              <div class="collapse searchCollapse" id="collapseExample">
-                <div class="card card-body">
-                  <input class="inputSearch" type="text">
-                  <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
-                </div>
+            </div>
+            <div class="collapse searchCollapse" id="collapseExample">
+              <div class="card card-body">
+                <input class="inputSearch" type="text">
+                <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
               </div>
-        </div>
+            </div>
+      </div>
     </header>
     <!--Header ends here-->
 

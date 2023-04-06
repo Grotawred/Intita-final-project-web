@@ -14,6 +14,16 @@ body{
     margin: 0;
 }
 
+.main-words{
+  gap: 130px;
+}
+
+.main-word{
+  background: -webkit-linear-gradient(left,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .swiper {
   width: 100%;
   height: 738px;
@@ -632,7 +642,7 @@ main{
 }
 
 .grad-div{
-  width: 45%; 
+  /* width: 45%;  */
   height: 535px;
 }
 
@@ -641,14 +651,17 @@ main{
 }
 
 .grad-info{
-  margin-left: 200px;
+  margin-left: 270px;
 }
 
 .gradName-div{
   font-size: 40px; 
-  font-family: Nova; 
-  width: 30%; 
+  font-family: Monts; 
   margin-left: 40px;
+  background: -webkit-linear-gradient(left,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
 }
 
 .achivments-div{
@@ -662,6 +675,9 @@ main{
 
 .placeholder-div{
   gap: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Monts;
 }
 
 .placeholder1{
@@ -813,5 +829,10 @@ footer{
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
   background: #1B1F2F;
+}
+
+.lang-and-search{
+  margin-left: 137px;
+  gap: 40px;
 }
 

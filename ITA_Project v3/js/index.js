@@ -32,7 +32,7 @@ function changeInfo(name){
         case 'Механічева Олександра':
             elImg.src="./img/Slider_student1.1.png";
             elImg.style.width='400px';
-            credoText.innerHTML="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an";
+            credoText.innerHTML='І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"';
             break;
         case 'Гурський Даніл':
             elImg.src="./img/Danil_big.png";

@@ -17,23 +17,27 @@
     <header id="header">
         <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
           <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
-            <p class="mg">Головна</p>
-            <a class="mg" href="#graduate"><p>Випускники</p></a>
-            <a class="mg" href="#student"><p>Студенти</p></a>
-            <a class="mg" href="#Contacts"><p>Контакти</p></a>
-            <div class="dropdown">
-                <button class="btn-lang mg" data-bs-toggle="dropdown">
-                  <img src="./img/UAflag.png" alt="uaFlag">
-                  <img src="./img/langArrow.png" alt="langArrow">
+          <div class="main-words d-flex">
+              <p class="mg main-word">Головна</p>
+              <a class="mg" href="#graduate"><p>Випускники</p></a>
+              <a class="mg" href="#student"><p>Студенти</p></a>
+              <a class="mg" href="#Contacts"><p>Контакти</p></a>
+            </div>
+            <div class="d-flex lang-and-search">
+              <div class="dropdown">
+                  <button class="btn-lang mg" data-bs-toggle="dropdown">
+                    <img src="./img/UAflag.png" alt="uaFlag">
+                    <img src="./img/langArrow.png" alt="langArrow">
+                  </button>
+                  <ul class="dropdown-menu dropdown-lang langChoose">
+                    <li><a class="dropdown-item" href="#"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
+                    <li><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
                 </button>
-                <ul class="dropdown-menu dropdown-lang langChoose">
-                  <li><a class="dropdown-item" href="#"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
-                  <li><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
-                </ul>
               </div>
-              <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
-              </button>
               <div class="collapse searchCollapse" id="collapseExample">
                 <div class="card card-body">
                   <input class="inputSearch" type="text">
@@ -97,8 +101,8 @@
         </div>
         <img class="more_btn" src="./img/More.png" alt="moreBtn">
         <div class="slider_text">
-          <h1>Презентація онлайн платформи INTITA.COM </h1>
-          <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+          <h1>Айтішний вікенд</h1>
+          <p>Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи. </p>
         </div>
         </div>
         </div>
@@ -113,7 +117,7 @@
                   <img class="credoImg" src="./img/credo_up.png" alt="credoUp">
                   <br>
                   <br>
-                  <p id="credo">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+                  <p id="credo">І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
                   <img class="credoImg" src="./img/credo_down.png" alt="credoDown">
                 </div>
                 <button onmouseover="hoverMoreArrowStudent(document.getElementById('arrowMore'),true)" onmouseleave="hoverMoreArrowStudent(document.getElementById('arrowMore'),false)" class="d-flex justify-content-between mt-5 studentMore">
@@ -325,12 +329,12 @@
                 <p class="achivment-text">Досягнення:</p>
                 <div>
                   <div class="d-flex placeholder-div">
-                    <div class="placeholder1"></div>
-                    <div class="placeholder2"></div>
+                    <div class="placeholder1"><p>Хакатон 2022</p></div>
+                    <div class="placeholder2"><p>Сертифікат Junior</p></div>
                   </div>
                   <div class="d-flex mt-3 placeholder-div">
-                    <div class="placeholder3"></div>
-                    <div class="placeholder4"></div>
+                    <div class="placeholder3"><p>Програміст року у INTITA</p></div>
+                    <div class="placeholder4"><p>JS</p></div>
                   </div>
                 </div>
               </div>

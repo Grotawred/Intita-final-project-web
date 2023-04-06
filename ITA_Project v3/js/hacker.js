@@ -8,7 +8,7 @@ function checkMobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         // true for mobile device
         console.log("mobile device");
-        window.location.href = ""//Link to mobile version;
+        window.location.href = "./hacker-page-mobile.html"
         return true;
       }else{
         // false for not mobile device
