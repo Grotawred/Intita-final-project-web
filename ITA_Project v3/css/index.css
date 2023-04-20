@@ -836,3 +836,12 @@ footer{
   gap: 40px;
 }
 
+mark{
+  opacity: 50%;
+  background: black;
+}
+
+.highlight {
+  background-color: yellow;
+}
+

@@ -29,18 +29,18 @@
         <div class="modal-head d-flex justify-content-between">
           <img class="logo-modal" src="./img/LOGO2.png" alt="logo">
           <div class="lang-but d-flex mt-4">
-            <button class="ua-but">ua</button>
-            <button class="en-but">en</button>
+            <button onclick="setLang('ua')" id="uaBut" class="ua-but">ua</button>
+            <button onclick="setLang('en')" id="enBut" class="en-but">en</button>
           </div>
         </div>
         <div class="d-flex justify-content-center">
           <hr class="modal-hr">
         </div>
         <div class="modal-links mt-3">
-          <p>Головна</p>
-          <p data-bs-dismiss="modal" aria-label="Close"><a href="#graduate">Випускники</a></p>
-          <p data-bs-dismiss="modal" aria-label="Close"><a href="#hacker">Хакери</a></p>
-          <p data-bs-dismiss="modal" aria-label="Close"><a href="#call-us">Контакти</a></p>
+          <p id="golovna" class="lang">Головна</p>
+          <p data-bs-dismiss="modal" aria-label="Close"><a id="graduates" class="lang" href="#graduate">Випускники</a></p>
+          <p data-bs-dismiss="modal" aria-label="Close"><a id="students" class="lang" href="#hacker">Хакери</a></p>
+          <p data-bs-dismiss="modal" aria-label="Close"><a id="contacts" class="lang" href="#call-us">Контакти</a></p>
         </div>
         <div class="modal-socials d-flex">
           <img src="./img/instagram-modal.png" alt="">
@@ -57,19 +57,21 @@
           <div class="d-flex justify-content-center">
             <img class="decorations" src="./img/decorations-mob.png" alt="decorations">
           </div>
-            <h1>ВІННИЦЬКА<br>IT-АКАДЕМІЯ</h1>
+            <h1 id="academyAdd1" class="lang">ВІННИЦЬКА</h1>
+            <h1 id="academyAdd2" class="lang">IT-АКАДЕМІЯ</h1>
             <div class="motivation">
-                <p>Навчайся разом з нами<br>Досягай професійного успіху - гарантовано!</p>
+                <p id="learn" class="lang">Навчайся разом з нами</p>
+                <p id="reach" class="lang">Досягай професійного успіху - гарантовано!</p>
             </div>
             <div class="d-flex justify-content-center">
-            <button class="to-call">Зателефонувати</button>
+            <button id="toCall" class="to-call lang">Зателефонувати</button>
             </div>
         </div>
     </header>
 
     <main>
         <div class="events">
-            <h1>Заходи академії</h1>
+            <h1 id="events" class="lang">Заходи академії</h1>
             <div class="slider">
                 <img class="more-but-events" src="./img/more_btn_mob.png" alt="">
                 <div class="swiper mySwiper">
@@ -98,23 +100,25 @@
                   </script>
             </div>
             <div class="events_text">
-                <h2>Назва заходу</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+                <h2 id="eventName" class="lang">Айтішний вікенд</h2>
+                <p id="eventDesc" class="lang">Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи.</p>
             </div>
         </div>
 
         <div id="hacker" class="hacker">
-            <h1>Студенти</h1>
+            <h1 id="students" class="lang">Студенти</h1>
             <div class="d-flex justify-content-center mt-3">
                 <img src="./img/sasha_mob.png" alt="">
             </div>
             <h2 class="mt-2 hacker-text">Механічева Олександра</h2>
             <p class="mt-4 hacker-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
             <div class="d-flex justify-content-center mt-4">
-                <button class="but-hacker d-flex justify-content-between">
-                    <p>Дізнатись більше</p>
+                <a href="hacker-page-mobile.html">
+                  <button class="but-hacker d-flex justify-content-between">
+                    <p id="moreStudent" class="lang">Дізнатись більше</p>
                     <img src="./img/arrow-short-left-mob.png" alt="">
                 </button>
+                </a>
             </div>
             <hr class="hr-hacker">
             <div id="carousel-hacker" class="carousel slide hacker-slider">
@@ -186,13 +190,13 @@
         </div>
 
         <div id="call-us">
-            <h1>Зв’язатись з нами</h1>
+            <h1 id="ContactUs" class="lang">Зв’язатись з нами</h1>
             <div class="d-flex flex-column align-items-center input-fields mt-3">
-                <input type="text" placeholder="Введіть ім’я...">
-                <input type="text" placeholder="Введіть прізвище...">
+                <input id="inputName" type="text" placeholder="Введіть ім’я...">
+                <input id="inputSurname" type="text" placeholder="Введіть прізвище...">
                 <input type="number" placeholder="+380...">
             </div>
-            <h2 class="mt-2">Коли зателефонувати?</h2>
+            <h2 id="timeCall" class="mt-2 lang">Коли зателефонувати?</h2>
             <div class="d-flex justify-content-around">
                 <div class="dropdown">
                     <button class="time-but d-flex justify-content-around align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,17 +231,17 @@
                   </div>
             </div>
             <div class="mt-3 d-flex justify-content-center">
-                <button class="send">Надіслати</button>
+                <button id="sendCall" class="send lang">Надіслати</button>
             </div>
         </div>
 
         <div id="graduate">
-          <h1 class="pt-2">Випускники</h1>
+          <h1 id="graduates" class="pt-2 lang">Випускники</h1>
           <div class="graduate-info mt-5 d-flex justify-content-around">
               <img src="./img/Sasha_mini.png" alt="">
               <h2 class="mt-3">Механічева Олександра</h2>
           </div>
-          <h1 class="mt-3">Досягнення:</h1>
+          <h1 id="achivment" class="mt-3 lang">Досягнення:</h1>
           <div class="d-flex justify-content-center">
             <div class="achive">
               <div class="d-flex justify-content-around">
@@ -251,10 +255,12 @@
             </div>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            <button class="more-but-graduate d-flex justify-content-between">
-              <p class="mt-1">Більше</p>
+            <a href="graduate-page-mobile.html">
+              <button class="more-but-graduate d-flex justify-content-between">
+              <p id="moreGraduates" class="mt-1 lang">Більше</p>
               <img class="mt-2" src="./img/arrow-short-right3.png" alt="">
             </button>
+            </a>
           </div>
           <div id="graduate-slider" class="carousel slide">
             <div class="carousel-inner mt-4">
@@ -317,14 +323,14 @@
             <hr>
           </div>
           <div class="footer-links d-flex justify-content-center">
-            <p class="main-footer">Головна</p>
-            <a href="#graduate"><p>Випускники</p></a>
-            <a href="#hacker"><p>Студенти</p></a>
-            <a href="#call-us"><p>Контакти</p></a>
+            <p id="golovna" class="main-footer lang">Головна</p>
+            <a href="#graduate"><p id="graduates" class="lang">Випускники</p></a>
+            <a href="#hacker"><p id="students" class="lang">Студенти</p></a>
+            <a href="#call-us"><p id="contacts" class="lang">Контакти</p></a>
           </div>
           <div class="d-flex justify-content-center">
             <button class="loc-but d-flex justify-content-between align-items-center">
-              <p class="mt-3">Локація</p>
+              <p id="locationText" class="mt-3 lang">Локація</p>
               <img src="./img/arrow-short-right-slider-mob.png" alt="">
             </button>
           </div>
@@ -338,8 +344,8 @@
             <a href=""><img src="./img/twitter-footer-mob.png" alt=""></a>
           </div>
           <div class="connections d-flex justify-content-center flex-column align-items-center mt-2">
-            <p>тел.моб:+38 067 431 74 24</p>
-            <p>пошта: intitavn@gmail.com</p>
+            <p>+38 067 431 74 24</p>
+            <p id="email" class="lang">пошта: intitavn@gmail.com</p>
           </div>
         </footer>
     </main>
