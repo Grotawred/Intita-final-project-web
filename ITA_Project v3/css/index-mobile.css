@@ -153,12 +153,12 @@ body{
     margin-top: 96px;
 }
 
-.swiper {
+.eventSwiper {
     width: 240px;
     height: 320px;
   }
 
-.swiper-slide {
+.event-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,12 +170,12 @@ body{
     height: 186px !important;   
   }
 
-  .swiper-slide img{
+  .event-slide img{
     width: 100%;
     height: 186px;
   }
 
-  .swiper-3d .swiper-wrapper {
+    .event-wrapper {
     height: 186px;
 }
 
@@ -204,202 +204,120 @@ body{
     top: 900px;
 }
 
-.hacker{
-    width: 100%;
-    font-family: Monts;
-    margin-top: 96px;
-}
-
-.hacker h1{
-    font-size: 24px;
-    text-align: center;
-}
-
-.hacker h2{
-    font-size: 20px;
-    background: -webkit-linear-gradient(right,#30CFD0, #330867);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-.hacker-text{
-    text-align: left;
-    margin-left: 30px;
-    width: 85%;
-}
-
-.but-hacker{
-    color: white;
-    font-size: 20px;
-    background-image: linear-gradient(to right,#30CFD0,#330867);
-    width: 299px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-}
-
-.but-hacker img{
-    margin-top: 5px;
-}
-
-.hr-hacker{
-    color: grey;
-    opacity: 20%;
-    height: 2px;
-}
-
-.hacker-slider{
-    font-size: 20px;
-}
-
-.hacker-item img{
-    width: 64px;
-    height: 64px;
-}
-
-.hacker-item p{
-    margin-left: 13px;
-}
 
 #call-us{
-    font-family: Monts;
     margin-top: 96px;
 }
 
-#call-us h1{
+.backgroundImg{
+    background-image: url(../img/decoration-call-mob.png);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.call-form{
+    background: rgba(255, 255, 255, 0.80);
+    width: 95%;
+    border-radius: 10px;
+}
+
+.call-form h1{
     font-size: 24px;
+    font-family: Monts;
     text-align: center;
-}
-
-#call-us input{
-    width: 300px;
-    height: 48px;
-    background: #C1F8F8;
-    border: none;
-    border-radius: 10px;
-}
-
-.input-fields{
-    gap: 16px;
-}
-
-#call-us h2{
-    font-size: 20px;
-    text-align: center;
-}
-
-.time-but{
-    width: 140px;
-    height: 48px;
-    background: #C1F8F8;
-    border: none;
-    border-radius: 10px;
-}
-
-.dropdown-menu.show {
-    background: #C1F8F8;
-    min-width: 52px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.send{
-    font-size: 20px;
     color: #30CFD0;
-    background: #111524;
-    width: 300px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: -2px -2px 10px 1px #30CFD0;
 }
+
+.input-call input{
+    width: 241px;
+    height: 22px;
+    background: none;
+    border: none;
+    border-bottom: 2px black solid;
+    font-family: Monts;
+}
+
+.input-call{
+    gap: 24px;
+}
+
+.time-call{
+    font-family: Monts;
+    width: 241px;
+    height: 40px;
+    background: #C1F8F8;
+    border-radius: 10px;
+}
+
+.time-call button{
+    width: 43px;
+    height: 24px;
+    border: none;
+    background: #111524;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.time-call p{
+    font-size: 12px;
+}
+
+.time-menu{
+    min-width: 52px;
+    background: #C1F8F8;
+}
+
+.send-time{
+    width: 241px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    border: 2px black solid;
+    font-family: Monts;
+}
+
 
 #graduate{
-    background: #E3F6F6;
-    font-family: Monts;
     margin-top: 96px;
 }
 
 #graduate h1{
-    text-align: center;
     font-size: 24px;
-}
-
-#graduate h2{
-    font-size: 20px;
     font-family: Nova;
-    width: 30%;
+    margin-left: 10px;
 }
 
-.achive-placeholder{
-    border: 1px black solid;
+.grad-slide{
+    background: #fffcfc;
+    font-family: Monts;
     border-radius: 10px;
-    height: 35px;
 }
 
-.first{
-    width: 139px;
-}
-
-.second{
-    width: 139px;
-}
-
-.third{
-    width: 220px;
-}
-
-.fourth{
-    width: 60px;
-}
-
-.more-but-graduate{
-    background: #111524;
+.grad-slide h2{
+    font-size: 20px;
     color: #30CFD0;
-    font-size: 20px;
-    width: 299px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: -2px -2px 10px 1px #30CFD0;
+    margin-left: 24px;
 }
 
-.graduate-slide{
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
+.grad-slide p{
+    margin-left: 24px;
+    width: 70%;
 }
 
-.first-graduate{
-    background: #1B1F2F;
-    width: 138px;
-    height: 92px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    margin-left: 20px;
-}
-
-.second-graduate{
-    background: #A1C4FD;
+.grad-slide button{
     width: 140px;
-    height: 84px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 50px;
-    margin-right: 20px;
-    
+    height: 40px;
+    background: none;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: #30CFD0;
+    margin-left: 24px;
 }
 
-.control-grad{
-    padding-right: 20px;
-}
 
-.control-grad2{
-    padding-left: 20px;
-}
 
 footer{
     background: #111524;
@@ -462,4 +380,41 @@ a{
 #call-us input::placeholder{
     padding-left: 10px;
 }
+
+.hackerH1{
+    font-size: 24px;
+    font-family: Nova;
+    display: flex;
+    justify-content: end;
+}
+
+.hackerH1{
+    margin-right: 10px;
+}
+
+#hacker{
+    margin-top: 96px;
+}
+
+.hackerSwiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hacker-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hacker-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 

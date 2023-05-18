@@ -13,15 +13,14 @@
 <body>
     <a href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
 
-    <!-- Header -->
-    <header id="header">
+     <header id="header">
         <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
           <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
           <div class="main-words d-flex lang">
               <p id="golovna" class="mg main-word searchWord lang">Головна</p>
-              <a id="graduates" class="mg searchWord lang" href="#graduate"><p>Випускники</p></a>
-              <a id="students" class="mg searchWord lang" href="#student"><p>Студенти</p></a>
-              <a id="contacts" class="mg searchWord lang" href="#Contacts"><p>Контакти</p></a>
+              <a class="mg searchWord" href="#graduate"><p id="graduates" class="lang">Випускники</p></a>
+              <a class="mg searchWord" href="#student"><p id="students" class="lang">Студенти</p></a>
+              <a class="mg searchWord" href="#Contacts"><p id="contacts" class="lang">Контакти</p></a>
             </div>
             <div class="d-flex lang-and-search">
               <div class="dropdown">
@@ -44,7 +43,7 @@
                   <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
                 </div>
               </div>
-        </div>
+          </div>
         <div class="d-flex justify-content-between align-items-center aboutHeader">
             <div class="aboutContainer">
                 <h1 id="academy" class="lang">ВІННИЦЬКА IT-АКАДЕМІЯ</h1>
@@ -56,44 +55,36 @@
             </div>
             <img src="./img/decorations.png" alt="Decorations">
         </div>
-    </header>
-    <!-- End of header -->
+    </header> 
 
 
-
-    <!-- Main starts here -->
-    <main>
+     <main>
       <div class="first_part">
         <br>
         <h1 id="events" class="zahodi lang">Заходи академії</h1>
-      <div class="d-flex first_main_part justify-content-between">
+        <div class="d-flex first_main_part justify-content-between">
         <div class="slider">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper swiper-event">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide slide-event">
                 <img src="./img/slide.png" alt="slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide slide-event">
                 <img src="./img/Slide2.png" alt="slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide slide-event">
                 <img src="./img/slide3.png" alt="slide">
               </div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
+              <div class="swiper-slide slide-event"></div>
+              <div class="swiper-slide slide-event"></div>
+              <div class="swiper-slide slide-event"></div>
             </div>
           </div>
         
-          <!-- Swiper JS -->
           <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         
-          <!-- Initialize Swiper -->
           <script>
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".swiper-event", {
               effect: "cards",
               grabCursor: true,
             });
@@ -104,133 +95,136 @@
           <h1 id="eventName" class="lang">Айтішний вікенд</h1>
           <p id="eventDesc" class="lang">Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи.</p>
         </div>
-        </div>
-        </div>
-
-          <div class="d-flex justify-content-center flex-column align-items-center" id="student">
-            <h1 id="studentsText" class="studentsH1 lang">Студенти</h1>
-            <br>
-            <div class="info-field d-flex justify-content-around">
-              <div class="studentContainer">
-                <h2 id="studentName">Механічева Олександра</h2>
-                <div class="studentInfoContainer">
-                  <img class="credoImg" src="./img/credo_up.png" alt="credoUp">
-                  <br>
-                  <br>
-                  <p id="credo">І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
-                  <img class="credoImg" src="./img/credo_down.png" alt="credoDown">
-                </div>
-                <a href="hacker-page.html"><button onmouseover="hoverMoreArrowStudent(document.getElementById('arrowMore'),true)" onmouseleave="hoverMoreArrowStudent(document.getElementById('arrowMore'),false)" class="d-flex justify-content-between mt-5 studentMore">
-                  <p id="moreStudent" class="lang">Дізнатись більше</p>
-                  <img id="arrowMore" src="./img/moreArrowHover.png" alt="arrowLeftButton">
-                </button>
-                </a>
-              </div>
-              <div class="sliderStudent">
-              <img id="studentImg" width="400px" height="492px" src="./img/Slider_student1.1.png" alt="studentImg">
-              </div>
-            </div>
-            <div>
-              <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner carouselStudent">
-                  <div class="carousel-item active ">
-                    <div class="d-flex justify-content-around stud-container">
-                      <div class="d-flex align-items-center stud-div">
-                        <img class="stud-img" src="./img/Diana_mini.png" alt="">
-                        <h3 id="Diana" class="stud-text">Франишина Діана</h3>
-                      </div>
-                      <div class="d-flex align-items-center stud-div2">
-                        <img class="stud-img" src="./img/Nastya_mini.png" alt="">
-                        <h3 id="Nastya" class="stud-text">Кравчук Анастасія</h3>
-                      </div>
-  
-  
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-flex justify-content-around stud-container">
-                      <div onclick="changeInfo(document.getElementById('Vova').textContent)"  class="d-flex align-items-center stud-div">
-                        <img class="stud-img" src="./img/Vova_mini.png" alt="">
-                        <h3 id="Vova" class="stud-text">Володимир Ратинський</h3>
-                      </div>
-                      <div onclick="changeInfo(document.getElementById('Danil').textContent)" class="d-flex align-items-center stud-div2">
-                        <img class="stud-img" src="./img/Danil_mini.png" alt="">
-                        <h3 id="Danil" class="stud-text">Гурський Даніл</h3>
-                      </div>
-  
-  
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div  class="d-flex justify-content-around stud-container">
-                      <div onclick="changeInfo(document.getElementById('Grisha').textContent)" class="d-flex align-items-center stud-div">
-                        <img class="stud-img" src="./img/Grisha_mini.png" alt="">
-                        <h3 id="Grisha" class="stud-text">Власко Григорій</h3>
-                      </div>
-                      <div  class="d-flex align-items-center stud-div2">
-                        <img class="stud-img" src="./img/Egor_mini.png" alt="">
-                        <h3 id="Yehor" class="stud-text">Федчишин Єгор</h3>
-                      </div>
-  
-  
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-flex justify-content-around stud-container">
-                      <div onclick="changeInfo(document.getElementById('Kostya').textContent)"  class="d-flex align-items-center stud-div">
-                        <img class="stud-img" src="./img/Kostya_mini.png" alt="">
-                        <h3 id="Kostya" class="stud-text">Костя Гавриш</h3>
-                      </div>
-                      <div  class="d-flex align-items-center stud-div2">
-                        <img class="stud-img" src="./img/Tima_mini.png" alt="">
-                        <h3 id="Tima" class="stud-text">Бобрук Тимофій</h3>
-                      </div>
-  
-  
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div  class="d-flex justify-content-around stud-container">
-                      <div onclick="changeInfo(document.getElementById('Sasha').textContent)"  class="d-flex align-items-center stud-div">
-                        <img class="stud-img" src="./img/Sasha_mini.png" alt="">
-                        <h3 id="Sasha" class="stud-text">Механічева Олександра</h3>
-                      </div>
-                      <div  class="d-flex align-items-center stud-div2">
-                        <img class="stud-img" src="./img/Diana_mini.png" alt="">
-                        <h3 id="Diana" class="stud-text">Франишина Діана</h3>
-                      </div>
-  
-  
-                    </div>
-                  </div>
-
-    <button class="but-prev" data-bs-target="#carouselExample" data-bs-slide="prev"><img src="./img/arrow-short-left2.png" alt=""></button>
-    <button class="but-next" data-bs-target="#carouselExample" data-bs-slide="next"><img src="./img/arrow-short-right2.png" alt=""></button>
-  </div>
-                </div>
-              </div>
-            </div>
-
+      </div>
+    </div>
+        
+        <div id="student">
+          <div class="studentsH1">
+            <h1 id="studentsText" class="lang">Студенти</h1>
           </div>
-
-          <div id="Contacts">
-            <h1 id="ContactUs" class="Contact-text lang">Зв’язатись з нами</h1>
-            <div class="d-flex justify-content-center flex-column align-items-center mt-3 contact-div">
-              <input id="inputName" class="contact-field lang" type="text" placeholder="Введіть ім’я...">
-              <input id="inputSurname" class="contact-field lang" type="text" placeholder="Введіть прізвище...">
-              <input id="inputPhone" class="contact-field lang" type="number" placeholder="+380">
+          <div class="studentSlider-global d-flex justify-content-between mt-5">
+            <div class="group-stud d-flex flex-column">
+              <p>Team Leads</p>
+              <p>Senior</p>
+              <p>Middle</p>
+              <p>Junior</p>
             </div>
-            <h3 id="timeCall" class="call-text lang">Коли зателефонувати?</h3>
-            <div class="d-flex justify-content-center mt-2">
-            <div class="d-flex justify-content-around time-div">
-              <div class="dropdown">
-                <button class="d-flex justify-content-between align-items-center but-time" data-bs-toggle="dropdown">
-                  <p class="mt-3">9:00</p>
-                  <img src="./img/arrow-short-down.png" alt="">
-                </button>
-                <ul class="dropdown-menu time-list">
-                  <li><a class="dropdown-item" href="#">9:00</a></li>
+            <div class="student-slider">
+            <div class="splide-ttb splide-container">    
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Франишина Діана</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button class="diploma-btn stud-btn">Дипломи</button>
+                          <button class="more-stud-btn stud-btn">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/diana-stud-desc.png" alt="">
+                    </div>
+                  </li>
+
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Гавриш Костянтин</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button class="diploma-btn stud-btn">Дипломи</button>
+                          <button class="more-stud-btn stud-btn">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/kostya-stud-desc.png" alt="">
+                    </div>
+                  </li>
+                  
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Бобрук Тимофій</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button class="diploma-btn stud-btn">Дипломи</button>
+                          <button class="more-stud-btn stud-btn">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/tima-stud-desc.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Власко Григорій</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button class="diploma-btn stud-btn">Дипломи</button>
+                          <button class="more-stud-btn stud-btn">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/grisha-stud-desc.png" alt="">
+                    </div>
+                  </li>   
+                </ul> 
+              </div>	
+            </div>
+          </div>
+            
+              <script src="https://byjaris.com/code/demo/splide-blur/js/jquery.min.js"></script>
+              <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.min.js"></script>
+              <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.video.js"></script> 
+            
+            
+            <script>
+            var elms = document.getElementsByClassName( 'splide-ttb' );
+            for ( var i = 0, len = elms.length; i < len; i++ ) {
+              new Splide( elms[ i ],{rewind:false, direction: 'ttb', width: 666, height: '100%', gap: 0} ).mount();
+            }
+            </script>
+          </div>
+          <div class="d-flex but-soc-stud">
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt=""></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt=""></button>
+            <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt=""></button>
+            <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt=""></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt=""></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt=""></button>
+          </div>
+        </div>
+
+          <div id="Contacts" class="d-flex justify-content-between">
+            <img src="./img/decorations-call.png" alt="">
+            <div class="to-call">
+              <h2>Зв’яжемось з вами</h2>
+              <input type="text" placeholder="Ім’я" required>
+              <br>
+              <input class="mt-4" type="text" placeholder="Прізвище" required>
+              <br>
+              <input class="mt-4" type="number" placeholder="Номер телефону" required>
+              <div class="choose-time d-flex justify-content-around align-items-center mt-5">
+                <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <ul class="dropdown-menu dropdown-lang">
+                  <li><a class="dropdown-item" href="#">10:00</a></li>
+                  <li><a class="dropdown-item" href="#">11:00</a></li>
+                  <li><a class="dropdown-item" href="#">12:00</a></li>
+                  <li><a class="dropdown-item" href="#">13:00</a></li>
+                  <li><a class="dropdown-item" href="#">14:00</a></li>
+                  <li><a class="dropdown-item" href="#">16:00</a></li>
+                  <li><a class="dropdown-item" href="#">17:00</a></li>
+                </ul>
+                <p class="mt-3">Зручний для вас час</p>
+                <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <ul class="dropdown-menu dropdown-lang">
                   <li><a class="dropdown-item" href="#">10:00</a></li>
                   <li><a class="dropdown-item" href="#">11:00</a></li>
                   <li><a class="dropdown-item" href="#">12:00</a></li>
@@ -240,114 +234,87 @@
                   <li><a class="dropdown-item" href="#">17:00</a></li>
                 </ul>
               </div>
-              <div class="dropdown">
-                <button class="d-flex justify-content-between align-items-center but-time" data-bs-toggle="dropdown">
-                  <p class="mt-3">9:00</p>
-                  <img src="./img/arrow-short-down.png" alt="">
-                </button>
-                <ul class="dropdown-menu time-list">
-                  <li><a class="dropdown-item" href="#">9:00</a></li>
-                  <li><a class="dropdown-item" href="#">10:00</a></li>
-                  <li><a class="dropdown-item" href="#">11:00</a></li>
-                  <li><a class="dropdown-item" href="#">12:00</a></li>
-                  <li><a class="dropdown-item" href="#">13:00</a></li>
-                  <li><a class="dropdown-item" href="#">14:00</a></li>
-                  <li><a class="dropdown-item" href="#">16:00</a></li>
-                  <li><a class="dropdown-item" href="#">17:00</a></li>
-                </ul>
+              <div class="mt-5">
+                <button class="send-time">Надіслати</button>
               </div>
             </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-              <button class="send-but"><p id="sendCall" class="send-text lang">Надіслати</p></button>
-            </div>
-          </div>
+          </div> 
 
-
-
-
-
-
-
-
-
-
-          <div class="d-flex " id="graduate">
-            <div>
-              <div class="slider_grad">  
-                <div class="swiper mySwiper2 swiper-vertical">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide-vertical">
-                    <div class="figures">
-                      <div onclick="changeInfoGraduate(document.getElementById('Sasha').textContent)" class="figure1 d-flex justify-content-center align-items-center"><p id="Sasha">Механічева Олександра</p></div>
-                      <div onclick="changeInfoGraduate(document.getElementById('Diana').textContent)" class="figure2 d-flex justify-content-center align-items-center"><p id="Diana">Франишина Діана</p></div>
-                      <div onclick="changeInfoGraduate(document.getElementById('Nastya').textContent)" class="figure3 d-flex justify-content-center align-items-center"><p id="Nastya">Кравчук Анастасія</p></div>
+          <div id="graduate">
+            <h1>Випускники</h1>
+            <div class="grad-slider d-flex justify-content-between mt-5">
+              <div class="socials-grad d-flex flex-column">
+                <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt=""></button>
+                <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt=""></button>
+                <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt=""></button>
+                <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt=""></button>
+                <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt=""></button>
+                <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt=""></button>
+              </div>
+              <div class="grads">
+                <div class="swiper mySwiper2 grad">
+                  <div class="swiper-wrapper grad-wrapper">
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="text-graduate">
+                          <h2>Франишина Діана</h2>
+                          <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                          <button class="morebtn-grad">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/diana-graduate.png" alt="">
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide slide-vertical">
-                    <div class="swiper-slide slide-vertical">
-                      <div class="figures">
-                        <div onclick="changeInfoGraduate(document.getElementById('Vova').textContent)" class="figure1 d-flex justify-content-center align-items-center"><p id="Vova">Володимир Ратинський</p></div>
-                        <div onclick="changeInfoGraduate(document.getElementById('Danil').textContent)" class="figure2 d-flex justify-content-center align-items-center"><p id="Danil">Гурський Даніл</p></div>
-                        <div onclick="changeInfoGraduate(document.getElementById('Grisha').textContent)" class="figure3 d-flex justify-content-center align-items-center"><p id="Grisha">Власко Григорій</p></div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="text-graduate">
+                          <h2>Бобрук Тимофій</h2>
+                          <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                          <button class="morebtn-grad">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/tima-grad.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="text-graduate">
+                          <h2>Гавриш Костя</h2>
+                          <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                          <button class="morebtn-grad">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/kostya-grad.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="text-graduate">
+                          <h2>Гурський Даніл</h2>
+                          <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                          <button class="morebtn-grad">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/danya-grad.png" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide slide-vertical">
-                    <div class="figures">
-                      <div onclick="changeInfoGraduate(document.getElementById('Egor').textContent)" class="figure1 d-flex justify-content-center align-items-center"><p id="Egor">Федчишин Єгор</p></div>
-                      <div onclick="changeInfoGraduate(document.getElementById('Kostya').textContent)" class="figure2 d-flex justify-content-center align-items-center"><p id="Kostya">Костя Гавриш</p></div>
-                      <div onclick="changeInfoGraduate(document.getElementById('Tima').textContent)" class="figure3 d-flex justify-content-center align-items-center"><p id="Tima">Бобрук Тимофій</p></div>
-                    </div>
-                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
+              
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+              
+                <script>
+                  var swiper = new Swiper(".mySwiper2", {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 30,
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                    },
+                  });
+                </script>
               </div>
-            
-              <!-- Swiper JS -->
-              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-            
-              <!-- Initialize Swiper -->
-              <script>
-                var swiper = new Swiper(".mySwiper2", {
-                  direction: "vertical",
-                  pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                  },
-                });
-              </script></div>
-            </div>
-            <div class="d-flex flex-column align-items-center grad-div">
-              <h1 id="graduatesText" class="mt-4 grad-text lang">Випускники</h1>
-              <div class="d-flex mt-3 grad-info">
-                <img id="graduateImg" src="./img/Sasha_small.png" alt="">
-                <div class="gradName-div">
-                  <p id="graduateName">Механічева Олександра</p>
-                </div>
-              </div>
-              <div class="d-flex mt-4 achivments-div">
-                <p id="achivment" class="achivment-text lang">Досягнення:</p>
-                <div>
-                  <div class="d-flex placeholder-div">
-                    <div class="placeholder1"><p>Хакатон 2022</p></div>
-                    <div class="placeholder2"><p>Сертифікат Junior</p></div>
-                  </div>
-                  <div class="d-flex mt-3 placeholder-div">
-                    <div class="placeholder3"><p>Програміст року у INTITA</p></div>
-                    <div class="placeholder4"><p>JS</p></div>
-                  </div>
-                </div>
-              </div>
-              <a href="graduate-page.html"><button onmouseover="hoverMoreArrowGraduate(document.getElementById('morePlaceholder'),true)" onmouseleave="hoverMoreArrowGraduate(document.getElementById('morePlaceholder'),false)" class="d-flex justify-content-between morePlaceholder-but">
-                <p id="moreGraduates" class="mt-1 lang">Більше</p>
-                <img id="morePlaceholder" class="mt-3" src="./img/arrow-short-right.png" alt="">
-              </button>
-              </a>
             </div>
           </div>
-
-    </main>
+          </main> 
+     
     
     <footer class="d-flex justify-content-between" id="footer">
       <div class="d-flex">
@@ -356,10 +323,10 @@
         </div>
         <div class="d-flex flex-column nav-footer">
           <div class="d-flex nav-div">
-            <p id="golovnaFooter" class="main-footer lang">Головна</p>
-            <a id="graduatesFooter" class="lang" href="#graduate"><p class="footer-text">Випускники</p></a>
-            <a id="studentsFooter" class="lang" href="#student"><p class="footer-text">Студенти</p></a>
-            <a id="contactsFooter" class="lang" href="#Contacts"><p class="footer-text">Контакти</p></a>
+            <p id="golovna" class="main-footer lang">Головна</p>
+            <a href="#graduate"><p id="graduates" class="footer-text lang">Випускники</p></a>
+            <a href="#student"><p id="students" class="footer-text lang">Студенти</p></a>
+            <a href="#Contacts"><p id="contacts" class="footer-text lang">Контакти</p></a>
           </div>
           <button onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
             <p id="locationText" class="location-text lang">Локація</p>

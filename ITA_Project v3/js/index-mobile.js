@@ -35,10 +35,13 @@ var txt = {
       'studentsText': "Students",
       'moreStudent': "More",
       'ContactUs': "Contact Us",
-      'inputName': "Write your name...",
-      'inputSurname': "Write your surname...",
-      'timeCall': "When to call?",
+      'inputName': "Name",
+      'inputSurname': "Surname",
+      'inputPhone':"Phone number",
+      'contact': "We will contact you",
+      'timeCall': "A convenient time for you",
       'sendCall': "Send",
+      'graduatesText': "Graduates",
       'achivment': "Acvivments:",
       'moreGraduates': "More",
       'golovnaFooter': "Main Page",
@@ -67,10 +70,13 @@ var txt = {
       'studentsText': "Студенти",
       'moreStudent': 'Дізнатись більше',
       'ContactUs': "Зв’язатись з нами",
-      'inputName': "Введіть ім’я...",
-      'inputSurname': "Введіть прізвище...",
-      'timeCall': "Коли зателефонувати?",
+      'inputName': "Ім’я",
+      'inputSurname': "Прізвище",
+      'inputPhone': "Номер телефону",
+      'contact': "Зв’яжемось з вами",
+      'timeCall': "Зручний для вас час",
       'sendCall': "Надіслати",
+      'graduatesText': "Випускники",
       'achivment': "Досягнення:",
       'moreGraduates': "Більше",
       'golovnaFooter': "Головна",
@@ -91,6 +97,7 @@ function setLang(lang){
       const el = document.getElementsByClassName('lang');
       document.getElementById('inputName').placeholder = txt[lang]['inputName'];
       document.getElementById('inputSurname').placeholder= txt[lang]['inputSurname'];
+      document.getElementById('inputPhone').placeholder= txt[lang]['inputPhone'];
       document.getElementById('uaBut').style.background="none";
       document.getElementById('enBut').style.background="#30CFD0";
       for(var i = 0; i < el.length; i++){

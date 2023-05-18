@@ -7,10 +7,7 @@
     <title>INTITA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index-mobile.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
   <a href="#header"><button class="to-top-but"><img width="41px" height="41px" src="./img/arrow.png" alt=""></button></a>
@@ -74,10 +71,10 @@
             <h1 id="events" class="lang">Заходи академії</h1>
             <div class="slider">
                 <img class="more-but-events" src="./img/more_btn_mob.png" alt="">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./img/photo-mob.png" alt=""></div>
-                      <div class="swiper-slide"><img src="./img/photo-mob2.png" alt=""></div>
+                <div class="swiper eventSwiper">
+                    <div class="swiper-wrapper event-wrapper">
+                      <div class="swiper-slide event-slide"><img src="./img/photo-mob.png" alt=""></div>
+                      <div class="swiper-slide event-slide"><img src="./img/photo-mob2.png" alt=""></div>
                       <!-- <div class="swiper-slide"></div> -->
                       <!-- <div class="swiper-slide"></div> -->
                       <!-- <div class="swiper-slide">Slide 5</div>
@@ -93,7 +90,7 @@
                 
                   <!-- Initialize Swiper -->
                   <script>
-                    var swiper = new Swiper(".mySwiper", {
+                    var swiper = new Swiper(".eventSwiper", {
                       effect: "cards",
                       grabCursor: true,
                     });
@@ -105,105 +102,42 @@
             </div>
         </div>
 
-        <div id="hacker" class="hacker">
-            <h1 id="students" class="lang">Студенти</h1>
-            <div class="d-flex justify-content-center mt-3">
-                <img src="./img/sasha_mob.png" alt="">
+        <div id="hacker">
+          <div class="hackerH1">
+            <h1 id="studentsText" class="lang">Студенти</h1>
+          </div>
+          <div class="hackers">
+            <div class="slider">
+              <!-- Slider for hakcers -->
             </div>
-            <h2 class="mt-2 hacker-text">Механічева Олександра</h2>
-            <p class="mt-4 hacker-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
-            <div class="d-flex justify-content-center mt-4">
-                <a href="hacker-page-mobile.html">
-                  <button class="but-hacker d-flex justify-content-between">
-                    <p id="moreStudent" class="lang">Дізнатись більше</p>
-                    <img src="./img/arrow-short-left-mob.png" alt="">
-                </button>
-                </a>
-            </div>
-            <hr class="hr-hacker">
-            <div id="carousel-hacker" class="carousel slide hacker-slider">
-                <div class="carousel-inner">
-                  <div class="carousel-item active hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Danil_mini.png" alt="">
-                            <p class="mt-3">Гурський Даніл</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Tima_mini.png" alt="">
-                            <p class="mt-3">Бобрук Тимофій</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Egor_mini.png" alt="">
-                            <p class="mt-3">Федчишин Єгор</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Grisha_mini.png" alt="">
-                            <p class="mt-3">Власко Григорій</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Sasha_mini.png" alt="">
-                            <p class="mt-3">Механічева<br> Олександра</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Nastya_mini.png" alt="">
-                            <p class="mt-3">Кравчук Анастасія</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item hacker-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="d-flex justify-content-around">
-                            <img src="./img/Vova_mini.png" alt="">
-                            <p class="mt-3">Ратинський<br> Володимир</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hacker" data-bs-slide="prev">
-                  <img src="./img/arrow-short-left-slider-mob.png" alt="">
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-hacker" data-bs-slide="next">
-                    <img src="./img/arrow-short-right-slider-mob.png" alt="">
-                </button>
-              </div>
+          </div>
         </div>
 
         <div id="call-us">
-            <h1 id="ContactUs" class="lang">Зв’язатись з нами</h1>
-            <div class="d-flex flex-column align-items-center input-fields mt-3">
-                <input id="inputName" type="text" placeholder="Введіть ім’я...">
-                <input id="inputSurname" type="text" placeholder="Введіть прізвище...">
-                <input type="number" placeholder="+380...">
-            </div>
-            <h2 id="timeCall" class="mt-2 lang">Коли зателефонувати?</h2>
-            <div class="d-flex justify-content-around">
-                <div class="dropdown">
-                    <button class="time-but d-flex justify-content-around align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <p class="mt-3">9:00</p>
-                      <img src="./img/arrow-short-down-mob.png" alt="">
-                    </button>
-                    <ul class="dropdown-menu">
+          <div class="backgroundImg">
+            <div class="form-flex d-flex justify-content-center pt-3">
+              <form class="call-form">
+                <h1 id="contact" class="mt-2 lang">Зв’яжемось з вами</h1>
+                <div class="input-call d-flex flex-column align-items-center mt-3">
+                  <input id="inputName" type="text" placeholder="Ім’я" required>
+                  <input id="inputSurname" type="text" placeholder="Прізвище" required>
+                  <input id="inputPhone" type="number" placeholder="Номер телефону" required>
+                </div>
+                <div class="mt-3 d-flex justify-content-center">
+                  <div class="time-call d-flex justify-content-around align-items-center">
+                    <button data-bs-toggle="dropdown" aria-expanded="false">9:00</button>
+                    <ul class="dropdown-menu time-menu">
+                      <li><a class="dropdown-item" href="#">10:00</a></li>
+                      <li><a class="dropdown-item" href="#">11:00</a></li>
+                      <li><a class="dropdown-item" href="#">12:00</a></li>
+                      <li><a class="dropdown-item" href="#">13:00</a></li>
+                      <li><a class="dropdown-item" href="#">14:00</a></li>
+                      <li><a class="dropdown-item" href="#">16:00</a></li>
+                      <li><a class="dropdown-item" href="#">17:00</a></li>
+                    </ul>
+                    <p id="timeCall" class="mt-3 lang">Зручний для вас час</p>
+                    <button data-bs-toggle="dropdown" aria-expanded="false">9:00</button>
+                    <ul class="dropdown-menu time-menu">
                       <li><a class="dropdown-item" href="#">10:00</a></li>
                       <li><a class="dropdown-item" href="#">11:00</a></li>
                       <li><a class="dropdown-item" href="#">12:00</a></li>
@@ -213,107 +147,75 @@
                       <li><a class="dropdown-item" href="#">17:00</a></li>
                     </ul>
                   </div>
-
-                  <div class="dropdown">
-                    <button class="time-but d-flex justify-content-around align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <p class="mt-3">9:00</p>
-                      <img src="./img/arrow-short-down-mob.png" alt="">
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">10:00</a></li>
-                      <li><a class="dropdown-item" href="#">11:00</a></li>
-                      <li><a class="dropdown-item" href="#">12:00</a></li>
-                      <li><a class="dropdown-item" href="#">13:00</a></li>
-                      <li><a class="dropdown-item" href="#">14:00</a></li>
-                      <li><a class="dropdown-item" href="#">16:00</a></li>
-                      <li><a class="dropdown-item" href="#">17:00</a></li>
-                    </ul>
-                  </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4 pb-2">
+                  <button id="sendCall" class="send-time lang">Надіслати</button>
+                </div>
+              </form>
             </div>
-            <div class="mt-3 d-flex justify-content-center">
-                <button id="sendCall" class="send lang">Надіслати</button>
-            </div>
+          </div>
         </div>
 
         <div id="graduate">
-          <h1 id="graduates" class="pt-2 lang">Випускники</h1>
-          <div class="graduate-info mt-5 d-flex justify-content-around">
-              <img src="./img/Sasha_mini.png" alt="">
-              <h2 class="mt-3">Механічева Олександра</h2>
-          </div>
-          <h1 id="achivment" class="mt-3 lang">Досягнення:</h1>
-          <div class="d-flex justify-content-center">
-            <div class="achive">
-              <div class="d-flex justify-content-around">
-                <div class="achive-placeholder first"></div>
-                <div class="achive-placeholder second"></div>
+          <h1 id="graduatesText" class="lang">Випускники</h1>
+          <div class="grad-slider mt-3">
+            <div class="swiper gradSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="grad-slide">
+                    <h2>Франишина Діана</h2>
+                    <p>Посада</p>
+                    <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                    <button>Більше</button>
+                    <div class="d-flex justify-content-end grad-img">
+                      <img src="./img/grad-diana-mob.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grad-slide">
+                    <h2>Гурський Даніл</h2>
+                    <p>Посада</p>
+                    <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                    <button>Більше</button>
+                    <div class="d-flex justify-content-end grad-img">
+                      <img src="./img/grad-danil-mob.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grad-slide">
+                    <h2>Гавриш Костя</h2>
+                    <p>Посада</p>
+                    <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                    <button>Більше</button>
+                    <div class="d-flex justify-content-end grad-img">
+                      <img src="./img/grad-kostya-mob.png" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex justify-content-around mt-2">
-                <div class="achive-placeholder third"></div>
-                <div class="achive-placeholder fourth"></div>
-              </div>
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div> -->
             </div>
+          
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+          
+            <script>
+              var swiper = new Swiper(".gradSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                }
+              });
+            </script>
           </div>
-          <div class="d-flex justify-content-center mt-3">
-            <a href="graduate-page-mobile.html">
-              <button class="more-but-graduate d-flex justify-content-between">
-              <p id="moreGraduates" class="mt-1 lang">Більше</p>
-              <img class="mt-2" src="./img/arrow-short-right3.png" alt="">
-            </button>
-            </a>
-          </div>
-          <div id="graduate-slider" class="carousel slide">
-            <div class="carousel-inner mt-4">
-              <div class="carousel-item active">
-                <div class="d-flex justify-content-around">
-                  <div class="graduate-slide first-graduate d-flex align-items-center">
-                    <p>Кравчук Анастасія</p>
-                  </div>
-                  <div class="graduate-slide second-graduate d-flex align-items-center">
-                    <p>Федчшин Єгор</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-around">
-                  <div class="graduate-slide first-graduate d-flex align-items-center">
-                    <p>Бобрук Тимофій</p>
-                  </div>
-                  <div class="graduate-slide second-graduate d-flex align-items-center">
-                    <p>Гурський Даніл</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-around">
-                  <div class="graduate-slide first-graduate d-flex align-items-center">
-                    <p>Власко Григорій</p>
-                  </div>
-                  <div class="graduate-slide second-graduate d-flex align-items-center">
-                    <p>Механічева Олександра</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-around">
-                  <div class="graduate-slide first-graduate d-flex align-items-center">
-                    <p>Володимир Ратинський</p>
-                  </div>
-                  <div class="graduate-slide second-graduate d-flex align-items-center">
-                    <p>Бобрук Тимофій</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev control-grad" type="button" data-bs-target="#graduate-slider" data-bs-slide="prev">
-              <img src="./img/arrow-short-left-grad-mob.png" alt="">
-            </button>
-            <button class="carousel-control-next control-grad2" type="button" data-bs-target="#graduate-slider" data-bs-slide="next">
-              <img src="./img/arrow-short-right-grad-mob.png" alt="">
-            </button>
-          </div>
-          <br>
         </div>
+      </main>
 
         <footer>
           <div class="d-flex justify-content-center">
@@ -348,7 +250,6 @@
             <p id="email" class="lang">пошта: intitavn@gmail.com</p>
           </div>
         </footer>
-    </main>
 
 
 
