@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index-mobile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://byjaris.com/code/demo/splide-blur/splide/splide.core.css"> 
+    <link rel="stylesheet" href="https://byjaris.com/code/demo/splide-blur/splide/splide.video.css">
 </head>
 <body>
   <a href="#header"><button class="to-top-but"><img width="41px" height="41px" src="./img/arrow.png" alt=""></button></a>
@@ -66,7 +68,7 @@
         </div>
     </header>
 
-    <main>
+    <!-- <main> -->
         <div class="events">
             <h1 id="events" class="lang">Заходи академії</h1>
             <div class="slider">
@@ -108,7 +110,34 @@
           </div>
           <div class="hackers">
             <div class="slider">
-              <!-- Slider for hakcers -->
+              <div class="swiper hackerSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".hackerSlider", {
+                  direction: "vertical",
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                });
+              </script>
             </div>
           </div>
         </div>

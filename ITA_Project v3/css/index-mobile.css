@@ -410,11 +410,37 @@ a{
     align-items: center;
   }
 
-  .hacker-slide img {
-    display: block;
-    width: 100%;
+
+.splide__arrows{
+    display: none;
+}
+
+.stud-name{
+    font-size: 24px;
+}
+
+.stud-name h1{
+    width: 50%;
+}
+
+.hackers{
+    font-family: Monts;
+}
+
+.splide-ttb splide-container splide--slide splide--ttb splide--draggable is-active{
     height: 100%;
-    object-fit: cover;
   }
+  .splide__track{
+    height: 100%;
+  }
+  
+  .splide__list{
+    height: 100%;
+  }
+  
+  .splide-container{
+    height: 100%;
+  }
+
 
 

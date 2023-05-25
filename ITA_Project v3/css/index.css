@@ -279,10 +279,18 @@ body{
 
 .more_btn{
   position: absolute;
-  margin-left: 733px;
+  margin-left: 755px;
   margin-top: 400px;
   z-index: 99;
+  width: 128px;
+  height: 37px;
+  background: none;
+  border: 2px #30CFD0 solid;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Monts;
 }
+
 .swiper-vertical{
   height: 100%;
 }
@@ -1095,6 +1103,21 @@ mark{
 
 .splide__list li{
   list-style-type: none;
+}
+
+.splide-ttb splide-container splide--slide splide--ttb splide--draggable is-active{
+  height: 100%;
+}
+.splide__track{
+  height: 100%;
+}
+
+.splide__list{
+  height: 100%;
+}
+
+.splide-container{
+  height: 100%;
 }
 
 

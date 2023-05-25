@@ -90,7 +90,10 @@
             });
           </script>
         </div>
-        <img class="more_btn" src="./img/More.png" alt="moreBtn">
+        <button onclick="window.location.href = 'event-camp.html'" class="more_btn d-flex justify-content-around align-items-center">
+          <p class="mt-3">Більше</p>
+          <img src="./img/arrow-location.png" alt="">
+        </button>
         <div class="slider_text">
           <h1 id="eventName" class="lang">Айтішний вікенд</h1>
           <p id="eventDesc" class="lang">Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи.</p>
@@ -304,6 +307,7 @@
                     slidesPerView: "auto",
                     centeredSlides: true,
                     spaceBetween: 30,
+                    loop: true,
                     pagination: {
                       el: ".swiper-pagination",
                       clickable: true,
