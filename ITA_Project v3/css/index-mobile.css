@@ -311,7 +311,7 @@ body{
     width: 140px;
     height: 40px;
     background: none;
-    border: 2px black solid;
+    border: 1px black solid;
     border-radius: 10px;
     color: #30CFD0;
     margin-left: 24px;
@@ -441,6 +441,69 @@ a{
   .splide-container{
     height: 100%;
   }
+
+  .hackerSlider{
+    max-height: 600px;
+    width: 90%;
+  }
+
+  .stud-card{
+    font-family: Monts;
+  }
+
+  .stud-card h3{
+    font-size: 24px;
+  }
+
+  .stud-card p,h3{
+    width: 70%;
+    text-align: right;
+    margin-right: 18px;
+  }
+
+
+  .white-back{
+    background: #ecebeb;
+  }
+
+  .stud-btns button{
+    width: 140px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .diplomas-stud{
+    color: #30CFD0;
+    border: 1px #000 solid;
+  }
+
+  .more-stud{
+    border: 1px #30CFD0 solid;
+  }
+
+  .soc-stud button{
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 10px;
+  }
+
+  .nav-stud p{
+    writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+    font-family: Monts;
+    font-size: 12px;
+  }
+
+  .nav-stud p:first-child{
+    color: #30CFD0;
+  }
+
+
+
 
 
 
