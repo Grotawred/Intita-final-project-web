@@ -17,10 +17,10 @@
       <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
         <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
         <div class="main-words d-flex">
-            <p class="mg main-word">Головна</p>
-            <a class="mg" href="#graduate"><p>Випускники</p></a>
-            <a class="mg" href="#student"><p>Студенти</p></a>
-            <a class="mg" href="#Contacts"><p>Контакти</p></a>
+            <a href="index.html"><p class="mg">Головна</p></a>
+            <a class="mg" href="index.html#graduate"><p>Випускники</p></a>
+            <a class="mg" href="index.html#student"><p>Студенти</p></a>
+            <a class="mg" href="index.html#Contacts"><p>Контакти</p></a>
           </div>
           <div class="d-flex lang-and-search">
             <div class="dropdown">
@@ -93,7 +93,7 @@
             <h2>Літній табір - IT-camp</h2>
             <h3>Vinnytsia/Camp/2021</h3>
             <div class="mt-4 d-flex justify-content-around">
-                <img src="./img/camp.png" alt="">
+                <img src="./img/camp.png" alt="img">
                 <div class="text-about-event mt-5">
                     <p>Екватор у Літньому ІТ-таборі!<br>
                         Навчання та розвиток - це круто, але розважатись теж треба. Тому Вінницька ІТ-Академія влаштувала для дітей Квест. Діти розділились на команди, отримали карту, за допомогою якої мали знайти конверти із завданням. Хтось керував в якому напрямку рухатись, хтось наполеглево шукав конверти, а хтось виконував завдання - все як у справжній команді, кожен виконував своє завдання. В кінці Квесту діти склали пазл, частинки якого були у конвертах із завданнями.В цьому житті не важливо, як ти падаєш. Важливо, як ти піднімаєшся!</p>
@@ -103,7 +103,7 @@
                 <h2>Організатори</h2>
                 <div class="d-flex justify-content-around mt-4 organs">
                     <div class="organ-block d-flex flex-column align-items-center">
-                        <img src="./img/organ.png" alt="">
+                        <img src="./img/organ.png" alt="organ">
                         <p>Вінницька ІТ-Академія</p>
                     </div>
                 </div>
@@ -120,21 +120,21 @@
             <div class="d-flex nav-div">
             <a href="index.html"><p class="footer-text">Головна</p></a>
               <a href="index.html#graduate"><p class="footer-text">Випускники</p></a>
-              <a href="index.html#student"><p class="main-footer">Студенти</p></a>
+              <a href="index.html#student"><p class="footer-text">Студенти</p></a>
               <a href="index.html#Contacts"><p class="footer-text">Контакти</p></a>
             </div>
-            <button onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
-              <p class="location-text">Локація</p>
+            <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
+              <p  class="location-text">Локація</p>
               <img id="location-arrow" src="./img/location-arrow.png" alt="location-arrow">
             </button>
           </div>
         </div>
         <div class="soc-div">
           <div class="socials">
-            <img src="./img/instagram_black.png" alt="instagram-link">
-            <img src="./img/facebook_black.png" alt="facebook-link">
-            <img src="./img/telegram_black.png" alt="telegram-link">
-            <img src="./img/twitter_black.png" alt="twitter-link">
+            <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram_black.png" alt="instagram-link">
+            <img onclick="window.location.href = 'https://www.facebook.com/intita.it'" src="./img/facebook_black.png" alt="facebook-link">
+            <img onclick="window.location.href = 'https://t.me/IT_Academy_Vinnytsia'" src="./img/telegram_black.png" alt="telegram-link">
+            <img onclick="window.location.href = 'https://twitter.com/INTITA_EDU'" src="./img/twitter_black.png" alt="twitter-link">
           </div>
           <div class="d-flex">
             <div class="d-flex align-items-center justify-content-center mobile-num">

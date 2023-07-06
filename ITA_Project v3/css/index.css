@@ -362,10 +362,11 @@ body{
 }
 
 .dropdown-lang{
-  min-width: 64px; 
+  min-width: 100px; 
   border-radius: 10px;
   background: #C1F8F8;
   font-family: Monts;
+  text-align: center;
 }
 
 .searchCollapse{
@@ -806,6 +807,10 @@ footer{
 .socials{
   gap: 12px; 
   margin-left: 20px;
+}
+
+.socials img{
+  cursor: pointer;
 }
 
 .mobile-num{

@@ -8,10 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="./js/index.js"></script>
 </head>
 <body>
-    <a href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
+    <a onclick="smth()" href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
 
      <header id="header">
         <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
@@ -84,10 +83,7 @@
           <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         
           <script>
-            var swiper = new Swiper(".swiper-event", {
-              effect: "cards",
-              grabCursor: true,
-            });
+
           </script>
         </div>
         <button onclick="window.location.href = 'event-camp.html'" class="more_btn d-flex justify-content-around align-items-center">
@@ -124,8 +120,8 @@
                         <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
                         </div>
                         <div class="d-flex student-btns justify-content-end">
-                          <button class="diploma-btn stud-btn">Дипломи</button>
-                          <button class="more-stud-btn stud-btn">Більше</button>
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
                         </div>
                       </div>
                       <img src="./img/diana-stud-desc.png" alt="student">
@@ -140,8 +136,8 @@
                         <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
                         </div>
                         <div class="d-flex student-btns justify-content-end">
-                          <button class="diploma-btn stud-btn">Дипломи</button>
-                          <button class="more-stud-btn stud-btn">Більше</button>
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
                         </div>
                       </div>
                       <img src="./img/kostya-stud-desc.png" alt="student">
@@ -156,8 +152,8 @@
                         <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
                         </div>
                         <div class="d-flex student-btns justify-content-end">
-                          <button class="diploma-btn stud-btn">Дипломи</button>
-                          <button class="more-stud-btn stud-btn">Більше</button>
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
                         </div>
                       </div>
                       <img src="./img/tima-stud-desc.png" alt="student">
@@ -171,13 +167,28 @@
                         <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
                         </div>
                         <div class="d-flex student-btns justify-content-end">
-                          <button class="diploma-btn stud-btn">Дипломи</button>
-                          <button class="more-stud-btn stud-btn">Більше</button>
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
                         </div>
                       </div>
                       <img src="./img/grisha-stud-desc.png" alt="student">
                     </div>
-                  </li>   
+                  </li>
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Ратинський Володимир</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>It's a good life we live. The best, may it never change, and may it never change us</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button id="moreStudent" onclick="setHackerName('vova')" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/vova-stud-desc.png" alt="student">
+                    </div>
+                  </li>    
                 </ul> 
               </div>	
             </div>
@@ -189,14 +200,11 @@
             
             
             <script>
-            var elms = document.getElementsByClassName( 'splide-ttb' );
-            for ( var i = 0, len = elms.length; i < len; i++ ) {
-              new Splide( elms[ i ],{rewind:false, direction: 'ttb', width: 666, height: '100%', gap: 0} ).mount();
-            }
+
             </script>
           </div>
           <div class="d-flex but-soc-stud">
-            <button onclick="window.location.href = `https://www.instagram.com/intitaedu/`" class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
             <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
             <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
             <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
@@ -209,14 +217,15 @@
             <img src="./img/decorations-call.png" alt="decorations">
             <div class="to-call">
               <h2>Зв’яжемось з вами</h2>
-              <input type="text" placeholder="Ім’я" required>
+              <input id="inputName" type="text" placeholder="Ім’я" required>
               <br>
-              <input class="mt-4" type="text" placeholder="Прізвище" required>
+              <input id="inputSurname" class="mt-4" type="text" placeholder="Прізвище" required>
               <br>
-              <input class="mt-4" type="number" placeholder="Номер телефону" required>
+              <input id="inputPhone" class="mt-4" type="number" placeholder="Номер телефону" required>
               <div class="choose-time d-flex justify-content-around align-items-center mt-5">
                 <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
                 <ul class="dropdown-menu dropdown-lang">
+                  <li><a class="dropdown-item">9:00</a></li>
                   <li><a class="dropdown-item">10:00</a></li>
                   <li><a class="dropdown-item">11:00</a></li>
                   <li><a class="dropdown-item">12:00</a></li>
@@ -225,9 +234,10 @@
                   <li><a class="dropdown-item">16:00</a></li>
                   <li><a class="dropdown-item">17:00</a></li>
                 </ul>
-                <p class="mt-3">Зручний для вас час</p>
+                <p id="timeCall" class="mt-3 lang">Зручний для вас час</p>
                 <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
                 <ul class="dropdown-menu dropdown-lang">
+                  <li><a class="dropdown-item">9:00</a></li>
                   <li><a class="dropdown-item">10:00</a></li>
                   <li><a class="dropdown-item">11:00</a></li>
                   <li><a class="dropdown-item">12:00</a></li>
@@ -238,7 +248,7 @@
                 </ul>
               </div>
               <div class="mt-5">
-                <button class="send-time">Надіслати</button>
+                <button id="sendCall" class="send-time lang">Надіслати</button>
               </div>
             </div>
           </div> 
@@ -262,7 +272,7 @@
                         <div class="text-graduate">
                           <h2>Франишина Діана</h2>
                           <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
-                          <button class="morebtn-grad">Більше</button>
+                          <button id="moreGraduates" class="morebtn-grad lang">Більше</button>
                         </div>
                         <img class="grad-img" src="./img/diana-graduate.png" alt="graduate">
                       </div>
@@ -272,7 +282,7 @@
                         <div class="text-graduate">
                           <h2>Бобрук Тимофій</h2>
                           <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
-                          <button class="morebtn-grad">Більше</button>
+                          <button id="moreGraduates" class="morebtn-grad lang">Більше</button>
                         </div>
                         <img class="grad-img" src="./img/tima-grad.png" alt="graduate">
                       </div>
@@ -282,7 +292,7 @@
                         <div class="text-graduate">
                           <h2>Гавриш Костя</h2>
                           <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
-                          <button class="morebtn-grad">Більше</button>
+                          <button id="moreGraduates" class="morebtn-grad lang">Більше</button>
                         </div>
                         <img class="grad-img" src="./img/kostya-grad.png" alt="graduate">
                       </div>
@@ -292,7 +302,7 @@
                         <div class="text-graduate">
                           <h2>Гурський Даніл</h2>
                           <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
-                          <button class="morebtn-grad">Більше</button>
+                          <button id="moreGraduates" class="morebtn-grad lang">Більше</button>
                         </div>
                         <img class="grad-img" src="./img/danya-grad.png" alt="graduate">
                       </div>
@@ -303,16 +313,6 @@
                 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
               
                 <script>
-                  var swiper = new Swiper(".mySwiper2", {
-                    slidesPerView: "auto",
-                    centeredSlides: true,
-                    spaceBetween: 30,
-                    loop: true,
-                    pagination: {
-                      el: ".swiper-pagination",
-                      clickable: true,
-                    },
-                  });
                 </script>
               </div>
             </div>
@@ -332,7 +332,7 @@
             <a href="#student"><p id="students" class="footer-text lang">Студенти</p></a>
             <a href="#Contacts"><p id="contacts" class="footer-text lang">Контакти</p></a>
           </div>
-          <button onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
+          <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
             <p id="locationText" class="location-text lang">Локація</p>
             <img id="location-arrow" src="./img/location-arrow.png" alt="location-arrow">
           </button>
@@ -340,10 +340,10 @@
       </div>
       <div class="soc-div">
         <div class="socials">
-          <img src="./img/instagram_black.png" alt="instagram-link">
-          <img src="./img/facebook_black.png" alt="facebook-link">
-          <img src="./img/telegram_black.png" alt="telegram-link">
-          <img src="./img/twitter_black.png" alt="twitter-link">
+          <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram_black.png" alt="instagram-link">
+          <img onclick="window.location.href = 'https://www.facebook.com/intita.it'" src="./img/facebook_black.png" alt="facebook-link">
+          <img onclick="window.location.href = 'https://t.me/IT_Academy_Vinnytsia'" src="./img/telegram_black.png" alt="telegram-link">
+          <img onclick="window.location.href = 'https://twitter.com/INTITA_EDU'" src="./img/twitter_black.png" alt="twitter-link">
         </div>
         <div class="d-flex">
           <div class="d-flex align-items-center justify-content-center mobile-num">
@@ -360,9 +360,7 @@
 
 
 
-
-
-
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
