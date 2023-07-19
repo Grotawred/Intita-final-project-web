@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTITA</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/hacker-mobile.css">
     <link
@@ -29,18 +30,18 @@
             <div class="modal-head d-flex justify-content-between">
               <a href="index-mobile.html"><img class="logo-modal" src="./img/LOGO2.png" alt="logo"></a>
               <div class="lang-but d-flex mt-4">
-                <button class="ua-but">ua</button>
-                <button class="en-but">en</button>
+                <button onclick="setLang('ua')" id="uaBut" class="ua-but">ua</button>
+                <button onclick="setLang('en')" id="enBut" class="en-but">en</button>
               </div>
             </div>
             <div class="d-flex justify-content-center">
               <hr class="modal-hr">
             </div>
             <div class="modal-links mt-3">
-              <p><a href="index-mobile.html">Головна</a></p>
-              <p data-bs-dismiss="modal" aria-label="Close"><a href="index-mobile.html#graduate">Випускники</a></p>
-              <p data-bs-dismiss="modal" aria-label="Close"><a class="main-header" href="index-mobile.html#hacker">Хакери</a></p>
-              <p data-bs-dismiss="modal" aria-label="Close"><a href="index-mobile.html#call-us">Контакти</a></p>
+              <p><a class="lang" id="golovna" href="index-mobile.html">Головна</a></p>
+              <p data-bs-dismiss="modal" aria-label="Close"><a class="lang" id="graduates" href="index-mobile.html#graduate">Випускники</a></p>
+              <p data-bs-dismiss="modal" aria-label="Close"><a class="main-header lang" id="students" href="index-mobile.html#hacker">Хакери</a></p>
+              <p data-bs-dismiss="modal" aria-label="Close"><a class="lang" id="contacts" href="index-mobile.html#call-us">Контакти</a></p>
             </div>
             <div class="modal-socials d-flex">
               <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram-modal.png" alt="instagram">
@@ -60,13 +61,13 @@
             <div class="for-border">
                 <div class="hacker-text">
                     <div class="d-flex justify-content-center flex-column align-items-center">
-                        <img src="./img/Slider_student1.1.png" alt="student">
-                        <h1 class="mt-1">Механічева Олександра</h1>
+                        <img id="studentImg" src="" alt="student">
+                        <h1 class="mt-1 change" id="name">Name</h1>
                     </div>
                     <div class="hacker-description mt-3">
-                        <p>Мене звати Механічева Олександра, або просто Саша, мені 15 років.</p>
-                        <p>Мій день народження -  10.11.2007. Я з Вінниці та навчаюсь в ліцеї  №31. Мій улюблений предмет - це історія.</p>
-                        <p>У Вінницькій IT-Академії я з жовтня 2021 року. Наразі вивчаю мову програмування Java, Web Design та Web Programming.</p>
+                        <p class="change" id="desc1">desc</p>
+                        <p class="change" id="desc2">desc</p>
+                        <p class="change" id="desc3">desc</p>
                     </div>
                     <div class="hacker-socials d-flex">
                         <img src="./img/instagram-hacker-mob.png" alt="instagram">
@@ -79,34 +80,34 @@
                 </div>
                 <br>
                 <div class="column firstColumn">
-                    <h2 class="mt-1">Група</h2>
+                    <h2 class="mt-1 lang" id="groupa">Група</h2>
                 </div>
                 <div class="column firstColumn">
-                    <p class="mt-1">Team Leads</p>
+                    <p class="mt-1 change" id="group">Team Leads</p>
                 </div>
                 <div class="column secondColumn d-flex justify-content-center pb-2">
                     <button class="diplomas d-flex justify-content-around align-items-center mt-2">
-                        <p class="mt-3">Дипломи/Сертифікати</p>
+                        <p class="mt-3 lang" id="diplomas">Дипломи/Сертифікати</p>
                         <img src="./img/arrow-short-right3.png" alt="arrow">
                     </button>
                 </div>
                 <div class="column firstColumn">
-                    <h2 class="mt-1">Кредо</h2>
+                    <h2 class="mt-1 lang" id="creed">Кредо</h2>
                 </div>
                 <div class="column firstColumn">
-                    <p class="mt-2">І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                    <p class="mt-2 change" id="credo">credo</p>
                 </div>
                 <div class="column firstColumn">
-                    <h2 class="mt-1">Відгук про навчання</h2>
+                    <h2 class="mt-1 lang" id="feed">Відгук про навчання</h2>
                 </div>
                 <div class="column secondColumn d-flex justify-content-center">
-                    <p class="mt-2 feedback">Навчанням в академії я задоволена. Цікаві пари, було багато цікавих проектів. Тут я знайшла багато друзів. </p>
+                    <p class="mt-2 feedback change" id="feedback">feedback</p>
                 </div>
             </div>
         </div>
 
         <div class="events">
-          <h1>Заходи академії з часттю студента</h1>
+          <h1 class="lang" id="event">Заходи академії з часттю студента</h1>
           <div class="slider">
               <img class="more-but-events" src="./img/more_btn_mob.png" alt="more">
               <div class="swiper mySwiper">
@@ -149,14 +150,14 @@
         <hr>
       </div>
       <div class="footer-links d-flex justify-content-center">
-        <a href="index-mobile.html"><p>Головна</p></a>
-        <a href="index-mobile.html#graduate"><p>Випускники</p></a>
-        <a href="index-mobile.html#hacker"><p class="main-footer">Хакери</p></a>
-        <a href="index-mobile.html#call-us"><p>Контакти</p></a>
+        <a href="index-mobile.html"><p class="lang" id="golovna">Головна</p></a>
+        <a href="index-mobile.html#graduate"><p class="lang" id="graduates">Випускники</p></a>
+        <a href="index-mobile.html#hacker"><p class="main-footer lang" id="students">Хакери</p></a>
+        <a href="index-mobile.html#call-us"><p class="lang" id="contacts">Контакти</p></a>
       </div>
       <div class="d-flex justify-content-center">
         <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" class="loc-but d-flex justify-content-between align-items-center">
-          <p class="mt-3">Локація</p>
+          <p class="mt-3 lang" id="locationText">Локація</p>
           <img src="./img/arrow-short-right-slider-mob.png" alt="arrow">
         </button>
       </div>
@@ -164,23 +165,31 @@
         <hr>
       </div>
       <div class="socials d-flex justify-content-center">
-        <a href="https://www.instagram.com/intitaedu/"><img src="./img/instagam-footer-mob.png" alt="instagram"></a>
-        <a href="https://www.facebook.com/intita.it"><img src="./img/facebook-footer-mob.png" alt="facebook"></a>
-        <a href="https://t.me/IT_Academy_Vinnytsia"><img src="./img/telegram-footer-mob.png" alt="telegram"></a>
-        <a href="https://twitter.com/INTITA_EDU"><img src="./img/twitter-footer-mob.png" alt="twitter"></a>
+        <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram_black.png" alt="instagram-link">
+          <img onclick="window.location.href = 'https://www.facebook.com/intita.it'" src="./img/facebook_black.png" alt="facebook-link">
+          <img onclick="window.location.href = 'https://t.me/IT_Academy_Vinnytsia'" src="./img/telegram_black.png" alt="telegram-link">
+          <img onclick="window.location.href = 'https://twitter.com/INTITA_EDU'" src="./img/twitter_black.png" alt="twitter-link">
       </div>
       <div class="connections d-flex justify-content-center flex-column align-items-center mt-2">
-        <a class="mobile-num" href="tel: +3806743174t24"><p>тел.моб:+38 067 431 74 24</p></a>
-        <a href="mailto: intitavn@gmail.com"><p>пошта: intitavn@gmail.com</p></a>
+        <a class="mobile-num" href="tel: +3806743174t24"><p>+38 067 431 74 24</p></a>
+        <a href="mailto: intitavn@gmail.com"><p class="lang" id="email">пошта: intitavn@gmail.com</p></a>
       </div>
     </footer>
 
 
-
-
-
+    <script>
+          if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // true for mobile device
+        console.log("mobile device");
+      }else{
+        // false for not mobile device
+        console.log("not mobile device");
+        window.location.href = "./hacker-page.html"; //Link to desktop version
+      }
+    </script>
 
     <script src="./js/hacker-mobile.js"></script>
+    <script type="module" src="./js/changeHacker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>

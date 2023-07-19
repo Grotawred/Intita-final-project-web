@@ -161,7 +161,7 @@
   }
 
   .event1{
-    background-image: url(../img/event1-blured.png);
+    background-image: url(../img/event1-slide.png);
   }
 
   .event2{
@@ -210,7 +210,7 @@
   .organ-block p{
     font-family: Monts;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 

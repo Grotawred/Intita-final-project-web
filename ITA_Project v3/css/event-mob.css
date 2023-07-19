@@ -107,7 +107,7 @@ header p a{
 }
 
 .event2{
-    background-image: url(../img/camp-blured-mob.png);
+    background-image: url(../img/event1-slide-mob.png);
 }
 
 .event1{
@@ -173,6 +173,10 @@ header p a{
     text-align: center;
 }
 
+.org-card img{
+    width: 100%;
+}
+
 .bec-org-card{
     width: 42%;
     text-align: center;
@@ -234,4 +238,12 @@ a{
 
 .connections p:last-child{
     text-decoration: underline;
+}
+
+.last-card{
+    margin-left: 20px;
+}
+
+#eventImg{
+    width: 90%;
 }

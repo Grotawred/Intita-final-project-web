@@ -1,3 +1,5 @@
+
+
 onload = function(){
     checkMobile();
 
@@ -21,6 +23,9 @@ onload = function(){
           clickable: true,
         },
       });
+
+
+
 
 
 }
@@ -103,7 +108,7 @@ var txt = {
         'studentsText': "Students",
         'moreStudent': "More",
         'diplomas':"Diplomas",
-        'ContactUs': "Contact Us",
+        'ContactUs': "We will contact you",
         'inputName': "Write your name...",
         'inputSurname': "Write your surname...",
         'inputPhone': "Phone number",
@@ -118,7 +123,7 @@ var txt = {
     },
     
     ua: {
-        'golovna': "Main Page",
+        'golovna': "Головна",
         'graduates': "Випускники",
         'students': "Студенти",
         'contacts': "Контакти",
@@ -132,7 +137,7 @@ var txt = {
         'studentsText': "Студенти",
         'moreStudent': 'Більше',
         'diplomas':"Дипломи",
-        'ContactUs': "Зв’язатись з нами",
+        'ContactUs': "Зв’яжемось з вами",
         'inputName': "Введіть ім’я...",
         'inputSurname': "Введіть прізвище...",
         'inputPhone': "Номер телефону",

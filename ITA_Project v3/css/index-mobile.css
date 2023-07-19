@@ -231,7 +231,7 @@ body{
 }
 
 .input-call input{
-    width: 241px;
+    width: 90%;
     height: 22px;
     background: none;
     border: none;
@@ -245,14 +245,14 @@ body{
 
 .time-call{
     font-family: Monts;
-    width: 241px;
+    width: 90%;
     height: 40px;
     background: #C1F8F8;
     border-radius: 10px;
 }
 
 .time-call button{
-    width: 43px;
+    width: 23%;
     height: 24px;
     border: none;
     background: #111524;
@@ -271,7 +271,7 @@ body{
 }
 
 .send-time{
-    width: 241px;
+    width: 90%;
     height: 40px;
     background: none;
     border-radius: 10px;

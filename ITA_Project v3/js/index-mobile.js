@@ -1,5 +1,28 @@
 onload = function(){
     checkMobile();
+
+    var swiper = new Swiper(".eventSwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+      var swiper2 = new Swiper(".hackerSlider", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper3 = new Swiper(".gradSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        }
+      });
 }
 
 
@@ -48,7 +71,7 @@ var txt = {
     },
     
     ua: {
-        'golovna': "Main Page",
+        'golovna': "Головна",
         'graduates': "Випускники",
         'students': "Студенти",
         'contacts': "Контакти",
@@ -98,6 +121,7 @@ function setLang(lang){
       const el = document.getElementsByClassName('lang');
       document.getElementById('inputName').placeholder = txt[lang]['inputName'];
       document.getElementById('inputSurname').placeholder= txt[lang]['inputSurname'];
+      document.getElementById('inputPhone').placeholder= txt[lang]['inputPhone'];
       document.getElementById('uaBut').style.background="#30CFD0";
       document.getElementById('enBut').style.background="none";
       for(var i = 0; i < el.length; i++){

@@ -1,48 +1,32 @@
-"use strict";
-
-import hackers from '../json/hackers.json' assert {type: 'json'};
-
-console.log(hackers);
-
-let hacker = '';
-
-console.log(hacker);
-
 onload = function(){
-    checkMobile();
-    changeContent(hacker);
+
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // true for mobile device
+        console.log("mobile device");
+        window.location.href = "./hacker-page-mobile.html"
+      }else{
+        // false for not mobile device
+        console.log("not mobile device");
+      }
+
+
+      
 }
 
-function setHacker(hacker){
-    this.hacker = hacker;
-}
 
 
-function changeContent(hacker){
-    console.log(hackers[0][hacker]);
-
-    const els = document.getElementsByClassName('change');
-
-    for(var i = 0; i < els.length; i++){
-        if(hackers[0][hacker][els[i].id]){
-            els[i].innerHTML = hackers[0][hacker][els[i].id];
-        }
-    }
 
 
-    
-}
 
 function checkMobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         // true for mobile device
         console.log("mobile device");
         window.location.href = "./hacker-page-mobile.html"
-        return true;
       }else{
         // false for not mobile device
         console.log("not mobile device");
-        return false;
       }
 }
 
@@ -65,12 +49,12 @@ var txt = {
         'learn': "Learn with us",
         'reach': "Achieve professional success - guaranteed!",
         'toCall': "Call",
-        'events': "Events of the academy",
+        'event': "Academy events with student's participation",
         'eventName': "IT-weekend",
         'eventDesc': "A wonderful Sunday holiday from the teachers of the academy. Warm company, goodies and board games awaited the students. Thank you to everyone who participated and had a good time in our society. We hope you will come to our other future events as well.",
         'studentsText': "Students",
         'moreStudent': "More",
-        'diplomas':"Diplomas",
+        'diplomas':"Diplomas/Certificates",
         'ContactUs': "Contact Us",
         'inputName': "Write your name...",
         'inputSurname': "Write your surname...",
@@ -81,12 +65,15 @@ var txt = {
         'achivment': "Acvivments:",
         'moreGraduates': "More",
         'locationText': "Location",
-        'email': "email: intitavn@gmail.com"
+        'email': "email: intitavn@gmail.com",
+        'groupa':"Group:",
+        'feedback':"Feedback about training",
+        'creed':"Creed"
 
     },
     
     ua: {
-        'golovna': "Main Page",
+        'golovna': "Головна",
         'graduates': "Випускники",
         'students': "Студенти",
         'contacts': "Контакти",
@@ -94,12 +81,12 @@ var txt = {
         'learn': "Навчайся разом з нами",
         'reach': "Досягай професійного успіху - гарантовано!",
         'toCall': "Зателефонувати",
-        'events': "Заходи академії",
+        'event': "Заходи академії з участю студента",
         'eventName': "Айтішний вікенд",
         'eventDesc': "Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи.",
         'studentsText': "Студенти",
         'moreStudent': 'Більше',
-        'diplomas':"Дипломи",
+        'diplomas':"Дипломи/Сертифікати",
         'ContactUs': "Зв’язатись з нами",
         'inputName': "Введіть ім’я...",
         'inputSurname': "Введіть прізвище...",
@@ -110,7 +97,10 @@ var txt = {
         'achivment': "Досягнення:",
         'moreGraduates': "Більше",
         'locationText': "Локація",
-        'email': "пошта: intitavn@gmail.com"
+        'email': "пошта: intitavn@gmail.com",
+        'groupa':"Група:",
+        'feedback':"Відгук про навчання",
+        'creed':"Кредо"
 
 
 
@@ -122,9 +112,6 @@ function setLang(lang){
     if(lang == 'en'){
         const el = document.getElementsByClassName('lang');
         document.getElementById('Flag').src='./img/USflag.png'
-        document.getElementById('inputName').placeholder = txt[lang]['inputName'];
-        document.getElementById('inputSurname').placeholder= txt[lang]['inputSurname'];
-        document.getElementById('inputPhone').placeholder= txt[lang]['inputPhone'];
         for(var i = 0; i < el.length; i++){
             if (txt[lang][el[i].id]) {
                 el[i].innerHTML = txt[lang][el[i].id];
@@ -134,9 +121,6 @@ function setLang(lang){
     if(lang == 'ua'){
         const el = document.getElementsByClassName('lang');
         document.getElementById('Flag').src='./img/UAflag.jpg'
-        document.getElementById('inputName').placeholder = txt[lang]['inputName'];
-        document.getElementById('inputSurname').placeholder= txt[lang]['inputSurname'];
-        document.getElementById('inputPhone').placeholder= txt[lang]['inputPhone'];
         for(var i = 0; i < el.length; i++){
             if (txt[lang][el[i].id]) {
                 el[i].innerHTML = txt[lang][el[i].id];

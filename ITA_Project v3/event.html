@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTITA</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/event.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -17,20 +18,20 @@
       <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
         <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
         <div class="main-words d-flex">
-            <a href="index.html"><p class="mg">Головна</p></a>
-            <a class="mg" href="index.html#graduate"><p>Випускники</p></a>
-            <a class="mg" href="index.html#student"><p>Студенти</p></a>
-            <a class="mg" href="index.html#Contacts"><p>Контакти</p></a>
+            <a href="index.html"><p class="mg lang" id="golovna">Головна</p></a>
+            <a class="mg" href="index.html#graduate"><p class="lang" id="graduates">Випускники</p></a>
+            <a class="mg" href="index.html#student"><p class="lang" id="students">Студенти</p></a>
+            <a class="mg" href="index.html#Contacts"><p class="lang" id="contacts">Контакти</p></a>
           </div>
           <div class="d-flex lang-and-search">
             <div class="dropdown">
                 <button class="btn-lang mg" data-bs-toggle="dropdown">
-                  <img src="./img/UAflag.png" alt="uaFlag">
+                  <img id="Flag" src="./img/UAflag.png" alt="uaFlag">
                   <img src="./img/langArrow.png" alt="langArrow">
                 </button>
                 <ul class="dropdown-menu dropdown-lang langChoose">
-                  <li><a class="dropdown-item" href="#"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
-                  <li><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
+                  <li onclick="setLang('ua')"><a class="dropdown-item" href="#"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
+                  <li onclick="setLang('en')"><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
                 </ul>
               </div>
               <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -54,27 +55,16 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide d-flex justify-content-around">
-                    <div class="event1 event d-flex flex-column justify-content-center">
-                        <h2>Summer IT-camp</h2>
-                        <p>Vinnytsia/Camp/2021</p>
+                    <div onclick="localStorage.setItem('event','camp');window.location.href='event.html'" id="camp" class="event1 event d-flex flex-column justify-content-center">
+
                     </div>
-                    <a href=""><div class="event2 event d-flex flex-column justify-content-center">
+                    <div onclick="localStorage.setItem('event','prof');window.location.href='event.html'" id="prof" class="event2 event d-flex flex-column justify-content-center">
 
-                    </div></a>
-                    <a href=""><div class="event3 event d-flex flex-column justify-content-center">
+                    </div>
+                    <div onclick="localStorage.setItem('event','holiday');window.location.href='event.html'" id="holiday" class="event3 event d-flex flex-column justify-content-center">
 
-                    </div></a>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    slide2
-                  </div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
                 </div>
               </div>
             
@@ -90,22 +80,29 @@
         </div>
 
         <div class="main-info">
-            <h2>Літній табір - IT-camp</h2>
-            <h3>Vinnytsia/Camp/2021</h3>
+            <h2 class="change" id="name">name</h2>
+            <h3 class="change" id="name2">name2</h3>
             <div class="mt-4 d-flex justify-content-around">
-                <img src="./img/camp.png" alt="img">
+                <img id="eventImg" src="" alt="img">
                 <div class="text-about-event mt-5">
-                    <p>Екватор у Літньому ІТ-таборі!<br>
-                        Навчання та розвиток - це круто, але розважатись теж треба. Тому Вінницька ІТ-Академія влаштувала для дітей Квест. Діти розділились на команди, отримали карту, за допомогою якої мали знайти конверти із завданням. Хтось керував в якому напрямку рухатись, хтось наполеглево шукав конверти, а хтось виконував завдання - все як у справжній команді, кожен виконував своє завдання. В кінці Квесту діти склали пазл, частинки якого були у конвертах із завданнями.В цьому житті не важливо, як ти падаєш. Важливо, як ти піднімаєшся!</p>
+                    <p class="change" id="desc">desc</p>
                 </div>
             </div>
             <div class="credits">
-                <h2>Організатори</h2>
+                <h2 class="lang" id="org">Організатори</h2>
                 <div class="d-flex justify-content-around mt-4 organs">
                     <div class="organ-block d-flex flex-column align-items-center">
-                        <img src="./img/organ.png" alt="organ">
-                        <p>Вінницька ІТ-Академія</p>
+                        <img id="OrganImg1" src="" >
+                        <p id="OrganText1"></p>
                     </div>
+                    <div class="organ-block d-flex flex-column align-items-center">
+                      <img id="OrganImg2" src="" >
+                      <p id="OrganText2"></p>
+                  </div>
+                  <div class="organ-block d-flex flex-column align-items-center">
+                    <img id="OrganImg3" src="" >
+                    <p id="OrganText3"></p>
+                </div>
                 </div>
             </div>
         </div>
@@ -118,13 +115,13 @@
           </div>
           <div class="d-flex flex-column nav-footer">
             <div class="d-flex nav-div">
-            <a href="index.html"><p class="footer-text">Головна</p></a>
-              <a href="index.html#graduate"><p class="footer-text">Випускники</p></a>
-              <a href="index.html#student"><p class="footer-text">Студенти</p></a>
-              <a href="index.html#Contacts"><p class="footer-text">Контакти</p></a>
+            <a href="index.html"><p class="footer-text lang" id="golovna">Головна</p></a>
+              <a href="index.html#graduate"><p class="footer-text lang" id="graduates">Випускники</p></a>
+              <a href="index.html#student"><p class="footer-text lang" id="students">Студенти</p></a>
+              <a href="index.html#Contacts"><p class="footer-text lang" id="contacts">Контакти</p></a>
             </div>
             <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
-              <p  class="location-text">Локація</p>
+              <p  class="location-text lang" id="locationText">Локація</p>
               <img id="location-arrow" src="./img/location-arrow.png" alt="location-arrow">
             </button>
           </div>
@@ -141,16 +138,25 @@
             <a href="tel:+38 067 431 74 24"><p class="mobileNum-text">+38 067 431 74 24</p></a>
             </div>
             <div class="email-div">
-             <a href="mailto:intitavn@gmail.com"><p class="email-text">пошта: intitavn@gmail.com</p></a>
+             <a href="mailto:intitavn@gmail.com"><p class="email-text lang" id="email">пошта: intitavn@gmail.com</p></a>
             </div>
           </div>
         </div>
       </footer>
 
 
+      <script>
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // true for mobile device
+        console.log("mobile device");
+        window.location.href = "event-mob.html";
+      }else{
+        // false for not mobile device
+        console.log("not mobile device");
+      }
+      </script>
 
-
-
+    <script type="module" src="./js/changeEvent.js"></script>
     <script src="./js/event.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
