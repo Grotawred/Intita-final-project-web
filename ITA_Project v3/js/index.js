@@ -37,12 +37,12 @@ onload = function(){
 
 function checkMobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        // true for mobile device
+
         console.log("mobile device");
         window.location.href = "index-mobile.html";
         return true;
       }else{
-        // false for not mobile device
+
         console.log("not mobile device");
         return false;
       }
@@ -60,25 +60,25 @@ function hoverMoreArrowLocation(el,isTrue){
 }
 
 function search() {
-    // Get the input value from the user
+
     var searchText = document.getElementById("input").value;
     
-    // Check if the search text is not empty
+
     if (searchText.trim() !== "") {
-      // Create a regular expression to search the text globally and ignore case
+
       var regex = new RegExp(searchText, "gi");
       
-      // Get all the elements in the page that contain text nodes
+
       var elements = document.getElementsByTagName("p");
       
-      // Loop through each element and search for the text
+
       for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
-        // Loop through each text node in the element and search for the text
+
         for (var j = 0; j < element.childNodes.length; j++) {
           var node = element.childNodes[j];
           if (node.nodeType === 3 && regex.test(node.textContent)) {
-            // If the text is found, replace it with a highlighted version
+
             var highlightedNode = document.createElement("span");
             highlightedNode.className = "highlight";
             var newText = node.textContent.replace(regex, function(match) {

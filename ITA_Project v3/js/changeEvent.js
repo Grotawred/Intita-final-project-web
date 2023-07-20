@@ -11,6 +11,10 @@ onload = function(){
 function changeContent(event){
     console.log(events[0][event]);
 
+    if(event == null){
+        event = 'prof';
+    }
+
     const els = document.getElementsByClassName('change');
 
 

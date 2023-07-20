@@ -33,14 +33,18 @@
                     <li onclick="setLang('en')"><a class="dropdown-item usLang mt-2"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
                   </ul>
                 </div>
-                <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-primary btn-img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
                 </button>
               </div>
-              <div class="collapse searchCollapse" id="collapseExample">
-                <div class="card card-body">
-                  <input onkeypress="search()" id="input" class="inputSearch" type="text">
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-center">
+                      <input onkeypress="search()" id="input" class="inputSearch" type="text">
                   <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
+                    </div>
+                  </div>
                 </div>
               </div>
           </div>

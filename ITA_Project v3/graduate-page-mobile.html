@@ -19,7 +19,7 @@
             <div class="d-flex justify-content-between head-icons mt-4">
                 <a href="index-mobile.html"><img class="logo" src="./img/LOGO2.png" alt="logo"></a>
                 <button class="menu-but" data-bs-toggle="modal" data-bs-target="#Modal"><img class="menu" src="./img/menu.png" alt="menu"></button>
-                <!-- Modal -->
+
     <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -70,12 +70,12 @@
                         <p class="change" id="desc3">desc</p>
                     </div>
                     <div class="hacker-socials d-flex">
-                        <img src="./img/instagram-hacker-mob.png" alt="instagram">
-                        <img src="./img/tiktok-hacker-mob.png" alt="tiktok">
-                        <img src="./img/discord-hacker-mob.png" alt="discord">
-                        <img src="./img/facebook-hacker-mob.png" alt="facebook">
-                        <img src="./img/twitter-hacker-mob.png" alt="twitter">
-                        <img src="./img/telegram-hacker-mob.png" alt="telegram">
+                        <img id="insta" src="./img/instagram-hacker-mob.png" alt="instagram">
+                        <img id="tiktok" src="./img/tiktok-hacker-mob.png" alt="tiktok">
+                        <img id="discord" src="./img/discord-hacker-mob.png" alt="discord">
+                        <img id="face" src="./img/facebook-hacker-mob.png" alt="facebook">
+                        <img id="twitt" src="./img/twitter-hacker-mob.png" alt="twitter">
+                        <img id="telegram" src="./img/telegram-hacker-mob.png" alt="telegram">
                     </div>
                 </div>
                 <br>
@@ -126,20 +126,11 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./img/photo-mob.png" alt="slide"></div>
                     <div class="swiper-slide"><img src="./img/photo-mob2.png" alt="slide"></div>
-                    <!-- <div class="swiper-slide"></div> -->
-                    <!-- <div class="swiper-slide"></div> -->
-                    <!-- <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div> -->
                   </div>
                 </div>
               
-                <!-- Swiper JS -->
                 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
               
-                <!-- Initialize Swiper -->
                 <script>
                   var swiper = new Swiper(".mySwiper", {
                     effect: "cards",
@@ -190,12 +181,12 @@
 
     <script>
           if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        // true for mobile device
+
         console.log("mobile device");
       }else{
-        // false for not mobile device
+
         console.log("not mobile device");
-        window.location.href = "./graduate-page.html"; //Link to desktop version
+        window.location.href = "./graduate-page.html"; 
       }
     </script>
 

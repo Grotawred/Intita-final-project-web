@@ -10,7 +10,13 @@
             "credo":"It's a good life we live. The best, may it never change, and may it never change us",
             "img":"./img/student3.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://www.instagram.com/ratinskiivova/",
+            "tiktok":"",
+            "discord":"discordapp.com/users/mortcord",
+            "face":"https://www.facebook.com/profile.php?id=100015949085084",
+            "twitt":"",
+            "telegram":"https://t.me/MortCord"
         },
 
         "diana" : {
@@ -23,7 +29,13 @@
             "credo":"Знайти себе неможливо – себе можна тільки створити.",
             "img":"./img/student2.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://www.instagram.com/_frandi__/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":""
         },
 
         "kostya" : {
@@ -36,7 +48,13 @@
             "credo":"За ким молодь, за тим і майбутнє.",
             "img":"no img",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://instagram.com/___k_o_s_s___?igshid=MmIzYWVlNDQ5Yg==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/KossKoKoss25"
         },
 
         "tima" : {
@@ -49,7 +67,13 @@
             "credo":"Поки ви лежите на дивані - вони заробляють міліони.",
             "img":"no img",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://instagram.com/tima.bobbruk?igshid=OGQ5ZDc2ODk2ZA==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/tima2814"
         },
 
         "grisha" : {
@@ -62,7 +86,13 @@
             "credo":"Краще працювати без визначеної мети, ніж нічого не робити.",
             "img":"./img/student4.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://instagram.com/grishavlasko?igshid=MjEwN2IyYWYwYw==",
+            "tiktok":"https://www.tiktok.com/@grotawres?_t=8e4KhcBQdZF&_r=1",
+            "discord":"https://discordapp.com/users/486829230123122689",
+            "face":"https://www.facebook.com/grisha.vlasko",
+            "twitt":"",
+            "telegram":"https://t.me/Grotawred"
         },
 
         "sasha" : {
@@ -75,7 +105,13 @@
             "credo":"І прийде час, коли один скаже: `Слава Україні!`, а мільйони відповідатимуть `Героям слава!`",
             "img":"./img/student5.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://www.instagram.com/wairixxi/?next=%2F",
+            "tiktok":"https://www.tiktok.com/@wairixx?_t=8dxIPzDo68U&_r=1",
+            "discord":"https://discordapp.com/users/936896528826658847",
+            "face":"https://www.facebook.com/profile.php?id=100024169294994",
+            "twitt":"https://twitter.com/wairixxi?s=09",
+            "telegram":"https://t.me/wairixxi"
         },
 
         "danil" : {
@@ -88,7 +124,13 @@
             "credo":"Хватит курить где попало, курите там где ище не попало.",
             "img":"./img/student6.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://instagram.com/danil_hurskiy?igshid=OGQ5ZDc2ODk2ZA==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/danil_qp"
         },
 
         "yehor" : {
@@ -101,7 +143,13 @@
             "credo":"Поки ти тримаєшся за свою «стабільність», хтось поруч втілює в життя твої мрії.",
             "img":"./img/student7.png",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://www.instagram.com/yehor_0/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/Yehor0"
         },
 
         "nastya" : {
@@ -114,7 +162,13 @@
             "credo":"Кращий спосіб почати робити – перестати говорити і почати робити.",
             "img":"no img",
             "workplace":"-",
-            "date":"-"
+            "date":"-",
+            "insta":"https://www.instagram.com/anastasia_official_07/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/anastasia_official_07"
         }
 
     }

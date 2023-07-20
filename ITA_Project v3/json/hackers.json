@@ -8,7 +8,13 @@
             "group":"Team Leads",
             "feedback" : "Дуже гарний підхід при вивчання мов програмування. В академії я почав свій шлях з вчителями пишучи на С,вона занадто складна для малих програмістів.Але це не дуже впливає на те щоб гарно оцінити Вінницьку ІТ-Академію",
             "credo":"It's a good life we live. The best, may it never change, and may it never change us",
-            "img":"./img/student3.png"
+            "img":"./img/student3.png",
+            "insta":"https://www.instagram.com/ratinskiivova/",
+            "tiktok":"",
+            "discord":"discordapp.com/users/mortcord",
+            "face":"https://www.facebook.com/profile.php?id=100015949085084",
+            "twitt":"",
+            "telegram":"https://t.me/MortCord"
         },
 
         "diana" : {
@@ -19,7 +25,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволена. Цікаві пари та багато проектів. Тут я знайшла багато друзів. ",
             "credo":"Знайти себе неможливо – себе можна тільки створити.",
-            "img":"./img/student2.png"
+            "img":"./img/student2.png",
+            "insta":"https://www.instagram.com/_frandi__/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":""
         },
 
         "kostya" : {
@@ -30,7 +42,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволений. Цікаві пари та багато проектів. Тут я знайшов багато друзів. ",
             "credo":"За ким молодь, за тим і майбутнє.",
-            "img":"no img"
+            "img":"no img",
+            "insta":"https://instagram.com/___k_o_s_s___?igshid=MmIzYWVlNDQ5Yg==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/KossKoKoss25"
         },
 
         "tima" : {
@@ -41,7 +59,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволений. Цікаві пари та багато проектів. Тут я знайшов багато друзів. ",
             "credo":"Поки ви лежите на дивані - вони заробляють міліони.",
-            "img":"no img"
+            "img":"no img",
+            "insta":"https://instagram.com/tima.bobbruk?igshid=OGQ5ZDc2ODk2ZA==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/tima2814"
         },
 
         "grisha" : {
@@ -52,7 +76,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволений. Цікаві пари та багато проектів. Тут я знайшов багато друзів. ",
             "credo":"Краще працювати без визначеної мети, ніж нічого не робити.",
-            "img":"./img/student4.png"
+            "img":"./img/student4.png",
+            "insta":"https://instagram.com/grishavlasko?igshid=MjEwN2IyYWYwYw==",
+            "tiktok":"https://www.tiktok.com/@grotawres?_t=8e4KhcBQdZF&_r=1",
+            "discord":"https://discordapp.com/users/486829230123122689",
+            "face":"https://www.facebook.com/grisha.vlasko",
+            "twitt":"",
+            "telegram":"https://t.me/Grotawred"
         },
 
         "sasha" : {
@@ -63,7 +93,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволена. Цікаві пари та багато проектів. Тут я знайшла багато друзів. ",
             "credo":"І прийде час, коли один скаже: `Слава Україні!`, а мільйони відповідатимуть `Героям слава!`",
-            "img":"./img/student5.png"
+            "img":"./img/student5.png",
+            "insta":"https://www.instagram.com/wairixxi/?next=%2F",
+            "tiktok":"https://www.tiktok.com/@wairixx?_t=8dxIPzDo68U&_r=1",
+            "discord":"https://discordapp.com/users/936896528826658847",
+            "face":"https://www.facebook.com/profile.php?id=100024169294994",
+            "twitt":"https://twitter.com/wairixxi?s=09",
+            "telegram":"https://t.me/wairixxi"
         },
 
         "danil" : {
@@ -74,7 +110,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволений. Цікаві пари та багато проектів. Тут я знайшов багато друзів. ",
             "credo":"Хватит курить где попало, курите там где ище не попало.",
-            "img":"./img/student6.png"
+            "img":"./img/student6.png",
+            "insta":"https://instagram.com/danil_hurskiy?igshid=OGQ5ZDc2ODk2ZA==",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/danil_qp"
         },
 
         "yehor" : {
@@ -85,7 +127,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволений. Цікаві пари та багато проектів. Тут я знайшов багато друзів. ",
             "credo":"Поки ти тримаєшся за свою «стабільність», хтось поруч втілює в життя твої мрії.",
-            "img":"./img/student7.png"
+            "img":"./img/student7.png",
+            "insta":"https://www.instagram.com/yehor_0/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/Yehor0"
         },
 
         "nastya" : {
@@ -96,7 +144,13 @@
             "group":"Team Leads",
             "feedback" : "Навчанням в академії я задоволена. Цікаві пари та багато проектів. Тут я знайшла багато друзів. ",
             "credo":"Кращий спосіб почати робити – перестати говорити і почати робити.",
-            "img":"no img"
+            "img":"no img",
+            "insta":"https://www.instagram.com/anastasia_official_07/",
+            "tiktok":"",
+            "discord":"",
+            "face":"",
+            "twitt":"",
+            "telegram":"https://t.me/anastasia_official_07"
         }
 
     }

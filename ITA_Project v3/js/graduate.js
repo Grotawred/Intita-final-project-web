@@ -6,12 +6,12 @@ onload = function(){
 
 function checkMobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        // true for mobile device
+
         console.log("mobile device");
-        window.location.href = "./graduate-page-mobile.html"//Link to mobile version;
+        window.location.href = "./graduate-page-mobile.html"
         return true;
       }else{
-        // false for not mobile device
+
         console.log("not mobile device");
         return false;
       }

@@ -186,11 +186,14 @@ body{
     border: none;
   }
 
+  .modal-content{
+    background: none;
+    border: none;
+  }
+
+
+
   .slide-bottom:focus {
-    /* animation-duration: 1s;
-    transform-origin: bottom;
-    animation-name: bounce;
-    animation-timing-function: ease-in-out; */
     animation: bounce 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
@@ -224,12 +227,6 @@ body{
   margin-top: 90px;
 }
 
- /* #student h2{
-  font-size: 36px;
-  background: -webkit-linear-gradient(right,#30CFD0, #330867);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 .footer-text:hover{
   color: #30CFD0 !important;
@@ -268,9 +265,7 @@ body{
   color: #30CFD0;
 }
 
-/* .first_main_part{
-  gap: 700px;
-} */
+
 
 .slider_text{
   width: 30%;
@@ -337,9 +332,7 @@ body{
   font-size: 16px;
 }
 
-/* .swiper p{
-  text-align: center;
-} */
+
 
 .figures{
   display: flex;
@@ -385,7 +378,7 @@ body{
 
 .collapseSearchIcon{
   position: absolute; 
-  margin-left: 825px; 
+  margin-left: 370px; 
   margin-top: 15px;
 }
 
@@ -445,9 +438,7 @@ main{
   color: #111524;
 }
 
-/* #student{
-  font-family: Monts;
-} */
+
 
 .studentsH1{
   margin-top: 208px; 
@@ -630,7 +621,6 @@ main{
   font-size: 24px; 
   border: 2px #30CFD0 solid; 
   border-radius: 10px; 
-  /* box-shadow: -2px -2px 30px 4px #30CFD0; */
   transition: background-color 0.5s;
 }
 
@@ -651,7 +641,6 @@ main{
 }
 
 .grad-div{
-  /* width: 45%;  */
   height: 535px;
 }
 
@@ -724,7 +713,6 @@ main{
   color: #000; 
   font-size: 24px; 
   border-radius: 10px; 
-  /* box-shadow: -2px -2px 30px 4px #30CFD0;  */
   margin-top: 20px; 
   margin-left: 260px; 
   border: 2px #30CFD0 solid;
@@ -768,7 +756,6 @@ footer{
 }
 
 .main-footer{
-  /* color: #30CFD0; */
   background: -webkit-linear-gradient(right,#30CFD0, #330867);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

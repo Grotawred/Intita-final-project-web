@@ -13,7 +13,7 @@
 <body>
     <a href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
 
-    <!-- Header -->
+
         <header id="header">
       <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
         <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
@@ -34,21 +34,23 @@
                   <li onclick="setLang('en')"><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
                 </ul>
               </div>
-              <button class="btn btn-primary btn-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <button class="btn btn-primary btn-img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
               </button>
             </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="collapse searchCollapse" id="collapseExample">
-          <div class="card card-body">
-            <input class="inputSearch" type="text">
-            <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
-          </div>
-        </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body d-flex justify-content-center">
+                    <input onkeypress="search()" id="input" class="inputSearch" type="text">
+                <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
     </header>    
-    <!--Header ends here-->
+
 
     <main>
         <div class="choose-event">
@@ -68,10 +70,10 @@
                 </div>
               </div>
             
-              <!-- Swiper JS -->
+
               <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             
-              <!-- Initialize Swiper -->
+
               <script>
                 var swiper = new Swiper(".mySwiper", {
                     loop: true
@@ -147,11 +149,11 @@
 
       <script>
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        // true for mobile device
+
         console.log("mobile device");
         window.location.href = "event-mob.html";
       }else{
-        // false for not mobile device
+
         console.log("not mobile device");
       }
       </script>

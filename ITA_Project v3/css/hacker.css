@@ -27,7 +27,7 @@ background: -webkit-linear-gradient(left,#30CFD0, #330867);
 -webkit-text-fill-color: transparent;
 }
 
-/* Header params */
+
 
 .toTopBut{
   position: fixed; 
@@ -112,7 +112,7 @@ background: -webkit-linear-gradient(left,#30CFD0, #330867);
 
 .collapseSearchIcon{
   position: absolute; 
-  margin-left: 825px; 
+  margin-left: 370px; 
   margin-top: 15px;
 }
 
@@ -126,7 +126,7 @@ a{
   border: none;
 }
 
-/* Main params */
+
 
 main{
   margin-top: 145px;
@@ -309,7 +309,7 @@ main{
   margin-right: 100px;
 }
 
-/* footer */
+
 
 footer{
   background: #111524; 
@@ -414,6 +414,11 @@ footer{
 .lang-and-search{
   margin-left: 137px;
   gap: 40px;
+}
+
+.modal-content{
+  background: none;
+  border: none;
 }
 
 

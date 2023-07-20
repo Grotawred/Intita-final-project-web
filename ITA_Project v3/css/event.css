@@ -25,7 +25,7 @@
   -webkit-text-fill-color: transparent;
   }
   
-  /* Header params */
+
   
   .toTopBut{
     position: fixed; 
@@ -110,7 +110,7 @@
   
   .collapseSearchIcon{
     position: absolute; 
-    margin-left: 825px; 
+    margin-left: 370px; 
     margin-top: 15px;
   }
   
@@ -139,7 +139,7 @@
     gap: 40px;
   }
 
-  /* Main params */
+
 
   .event{
     width: 411px;
@@ -218,7 +218,7 @@
     margin-top: 208px;
   }
 
-  /* footer */
+
 
   footer{
     background: #111524; 
@@ -308,4 +308,9 @@
   .footer-text:hover{
     color: #30CFD0 !important;
     cursor: pointer;
+  }
+
+  .modal-content{
+    background: none;
+    border: none;
   }
