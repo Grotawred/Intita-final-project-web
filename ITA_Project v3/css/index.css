@@ -10,7 +10,7 @@
 
 
 body{
-    background-color: #FBFCFF;
+    background-color: #DCF2F4;
 }
 
 .main-words{
@@ -1112,9 +1112,24 @@ mark{
   height: 100%;
 }
 
+.date{
+  margin-left: 500px;
+}
 
+.nums{
+  font-size: 24px;
+  font-family: Monts;
+  gap: 10px;
+  margin-right: 60px;
+}
 
+.nums p{
+  cursor: pointer;
+}
 
+#num1{
+  color: #30CFD0;
+}
 
 
 

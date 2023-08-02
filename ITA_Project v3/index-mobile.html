@@ -70,21 +70,28 @@
         <div class="events">
             <h1 id="events" class="lang">Заходи академії</h1>
             <div class="slider">
-                <img onclick="localStorage.setItem('event','prof');window.location.href='event.html'" class="more-but-events" src="./img/more_btn_mob.png" alt="more-events">
+                <img id="sliderMore" onclick="localStorage.setItem('event','prof');window.location.href='event.html'" class="more-but-events" src="./img/more_btn_mob.png" alt="more-events">
                 <div class="swiper eventSwiper">
                     <div class="swiper-wrapper event-wrapper">
-                      <div class="swiper-slide event-slide"><img src="./img/photo-mob.png" alt="slide"></div>
-                      <div class="swiper-slide event-slide"><img src="./img/photo-mob2.png" alt="slide"></div>
+                      <div id="eventImg1" class="swiper-slide event-slide"><img src="./img/photo-mob.png" alt="slide"></div>
+                      <div id="eventImg2" class="swiper-slide event-slide"><img src="./img/photo-mob2.png" alt="slide"></div>
+                      <div id="eventImg3" class="swiper-slide event-slide"><img src="./img/photoMob3.png" alt="slide"></div>
                     </div>
                   </div>
                   
                   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             </div>
             <div class="events_text">
-                <h2 id="eventName" class="lang">ProfIT Day</h2>
-                <p id="eventDesc" class="lang">- презентації передових компаній<br>
+                <h2 id="eventName" >ProfIT Day</h2>
+                <p id="eventDesc">- презентації передових компаній<br>
                   - змістовні тренінги та майстер-класи<br>
                   - можливість пройти співбесіду та отримати роботу в ІТ</p>
+            </div>
+            <div class="d-flex nums align-items-center justify-content-end">
+              <img class="mb-3" src="./img/arrow-slider.png" alt="arrow">
+              <p onclick="changeEvent(this)" id="num1">03</p>
+              <p onclick="changeEvent(this)" id="num2">12</p>
+              <p onclick="changeEvent(this)" id="num3">21</p>
             </div>
         </div>
 

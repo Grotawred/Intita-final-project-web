@@ -71,13 +71,13 @@
           <div class="swiper mySwiper swiper-event">
             <div class="swiper-wrapper">
               <div class="swiper-slide slide-event">
-                <img src="./img/slide.png" alt="slide">
+                <img id="eventImg1" src="./img/slide.png" alt="slide">
               </div>
               <div class="swiper-slide slide-event">
-                <img src="./img/Slide2.png" alt="slide">
+                <img id="eventImg2" src="./img/Slide2.png" alt="slide">
               </div>
               <div class="swiper-slide slide-event">
-                <img src="./img/slide3.png" alt="slide">
+                <img id="eventImg3" src="./img/slide3.png" alt="slide">
               </div>
               <div class="swiper-slide slide-event"></div>
               <div class="swiper-slide slide-event"></div>
@@ -85,17 +85,29 @@
             </div>
           </div>
         
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+          
         </div>
-        <button onclick="localStorage.setItem('event','prof');window.location.href='event.html'"  class="more_btn d-flex justify-content-around align-items-center">
+        <button id="sliderMore" onclick="localStorage.setItem('event','prof');window.location.href='event.html'"  class="more_btn d-flex justify-content-around align-items-center">
           <p  class="mt-3">Більше</p>
           <img src="./img/arrow-location.png" alt="arrow-img">
         </button>
+        
         <div class="slider_text">
-          <h1 id="eventName" class="lang">ProfIT Day</h1>
-          <p id="eventDesc" class="lang">- презентації передових компаній<br>
+          <h1 id="eventName">ProfIT Day</h1>
+          <p id="eventDesc">- презентації передових компаній<br>
             - змістовні тренінги та майстер-класи<br>
             - можливість пройти співбесіду та отримати роботу в ІТ</p>
+        </div>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <div>
+
+        </div>
+        <div class="d-flex nums align-items-center">
+          <img class="mb-3" src="./img/arrow-slider.png" alt="arrow">
+          <p onclick="changeEvent(this)" id="num1">03</p>
+          <p onclick="changeEvent(this)" id="num2">12</p>
+          <p onclick="changeEvent(this)" id="num3">21</p>
         </div>
       </div>
     </div>
@@ -261,9 +273,7 @@
             </div>
           </div>
             
-              <script src="https://byjaris.com/code/demo/splide-blur/js/jquery.min.js"></script>
-              <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.min.js"></script>
-              <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.video.js"></script> 
+ 
           </div>
           <div class="d-flex but-soc-stud">
             <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
@@ -275,7 +285,7 @@
           </div>
         </div>
 
-          <div id="Contacts" class="d-flex justify-content-between">
+          <form id="Contacts" class="d-flex justify-content-between">
             <img src="./img/decorations-call.png" alt="decorations">
             <div class="to-call">
               <h2 class="lang" id="ContactUs">Зв’яжемось з вами</h2>
@@ -285,35 +295,35 @@
               <br>
               <input id="inputPhone" class="mt-4" type="number" placeholder="Номер телефону" required>
               <div class="choose-time d-flex justify-content-around align-items-center mt-5">
-                <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <button id="firstTime" data-bs-toggle="dropdown" class="btn-time">9:00</button>
                 <ul class="dropdown-menu dropdown-lang">
-                  <li><a class="dropdown-item">9:00</a></li>
-                  <li><a class="dropdown-item">10:00</a></li>
-                  <li><a class="dropdown-item">11:00</a></li>
-                  <li><a class="dropdown-item">12:00</a></li>
-                  <li><a class="dropdown-item">13:00</a></li>
-                  <li><a class="dropdown-item">14:00</a></li>
-                  <li><a class="dropdown-item">16:00</a></li>
-                  <li><a class="dropdown-item">17:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">9:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">10:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">11:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">12:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">13:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">14:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">16:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">17:00</a></li>
                 </ul>
                 <p id="timeCall" class="mt-3 lang">Зручний для вас час</p>
-                <button data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <button id="secondTime" data-bs-toggle="dropdown" class="btn-time">9:00</button>
                 <ul class="dropdown-menu dropdown-lang">
-                  <li><a class="dropdown-item">9:00</a></li>
-                  <li><a class="dropdown-item">10:00</a></li>
-                  <li><a class="dropdown-item">11:00</a></li>
-                  <li><a class="dropdown-item">12:00</a></li>
-                  <li><a class="dropdown-item">13:00</a></li>
-                  <li><a class="dropdown-item">14:00</a></li>
-                  <li><a class="dropdown-item">16:00</a></li>
-                  <li><a class="dropdown-item">17:00</a></li>
+                  <li><a onclick="changeSecondTime(this)" class="dropdown-item">9:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">10:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">11:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">12:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">13:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">14:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">16:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">17:00</a></li>
                 </ul>
               </div>
               <div class="mt-5">
                 <button id="sendCall" class="send-time lang">Надіслати</button>
               </div>
             </div>
-          </div> 
+          </form> 
 
           <div id="graduate">
             <h1 class="lang" id="graduatesText">Випускники</h1>
@@ -498,7 +508,7 @@
                   </div>
                 </div>
               
-                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
               
               </div>
             </div>
@@ -543,6 +553,12 @@
     </footer>
 
 
+
+
+    <script src="https://byjaris.com/code/demo/splide-blur/js/jquery.min.js"></script>
+    <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.min.js"></script>
+    <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

@@ -131,3 +131,50 @@ function setLang(lang){
       }
   }
 }
+
+function changeEvent(el){
+  if(el.id == "num3"){
+    document.getElementById('eventName').innerHTML="IT-camp";
+    document.getElementById('eventDesc').innerHTML="- змістовний та активний відпочинок<br>- повноцінне оздоровлення<br>- різноманітні квести та веселощі";
+    document.getElementById('eventImg1').src="./img/campImg1.png";
+    document.getElementById('eventImg2').src="./img/campImg2.png";
+    document.getElementById('eventImg3').src="./img/campImg3.png";
+    el.style="color:#30CFD0";
+    document.getElementById('num1').style="color:#000";
+    document.getElementById('num2').style="color:#000";
+    document.getElementById('sliderMore').onclick = function(){
+      localStorage.setItem('event','camp');
+      window.location.href='event.html';
+    }
+  }
+
+  if(el.id == "num2"){
+    document.getElementById('eventName').innerHTML="Айтішний вікенд";
+    document.getElementById('eventDesc').innerHTML="Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи. ";
+    document.getElementById('eventImg1').src="./img/weekImg1.png";
+    document.getElementById('eventImg2').src="./img/weekImg2.png";
+    document.getElementById('eventImg3').src="./img/weekImg3.png";
+    el.style="color:#30CFD0";
+    document.getElementById('num1').style="color:#000";
+    document.getElementById('num3').style="color:#000";
+    document.getElementById('sliderMore').onclick = function(){
+      localStorage.setItem('event','holiday');
+      window.location.href='event.html';
+    }
+  }
+
+  if(el.id == "num1"){
+    document.getElementById('eventName').innerHTML="ProfIT Day";
+    document.getElementById('eventDesc').innerHTML="- презентації передових компаній<br>- змістовні тренінги та майстер-класи<br>- можливість пройти співбесіду та отримати роботу в ІТ";
+    document.getElementById('eventImg1').src="./img/slide.png";
+    document.getElementById('eventImg2').src="./img/Slide2.png";
+    document.getElementById('eventImg3').src="./img/slide3.png";
+    el.style="color:#30CFD0";
+    document.getElementById('num2').style="color:#000";
+    document.getElementById('num3').style="color:#000";
+    document.getElementById('sliderMore').onclick = function(){
+      localStorage.setItem('event','prof');
+      window.location.href='event.html';
+    }
+  }
+}

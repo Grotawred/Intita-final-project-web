@@ -6,6 +6,23 @@ import grads from '../json/grad.json' assert {type: 'json'};
 
 onload = function(){
     changeContent(this.localStorage.getItem('grad'));
+    checkSocials(this.localStorage.getItem('grad'));
+
+}
+
+function checkSocials(grad){
+    const socials = document.getElementsByClassName('soc');
+
+    for(let i = 0;i < socials.length;i++){
+        if(grads[0][grad][socials[i].id] == ""){
+            socials[i].style = "display:none;";
+        }else{
+            socials[i].onclick = function(){
+                window.location.href=grads[0][grad][socials[i].id];
+            }
+        }
+    }
+
 }
 
 function changeContent(grad){
@@ -18,30 +35,6 @@ function changeContent(grad){
     const els = document.getElementsByClassName('change');
 
     document.getElementById('gradImg').src=grads[0][grad]['img'];
-
-    document.getElementById('insta').onclick= function(){
-        window.location.href=grads[0][grad]['insta'];
-    }
-
-    document.getElementById('tiktok').onclick= function(){
-        window.location.href=grads[0][grad]['tiktok'];
-    }
-
-    document.getElementById('discord').onclick= function(){
-        window.location.href=grads[0][grad]['discord'];
-    }
-
-    document.getElementById('face').onclick= function(){
-        window.location.href=grads[0][grad]['face'];
-    }
-
-    document.getElementById('twitt').onclick= function(){
-        window.location.href=grads[0][grad]['twitt'];
-    }
-
-    document.getElementById('telegram').onclick= function(){
-        window.location.href=grads[0][grad]['telegram'];
-    }
 
 
     for(var i = 0; i < els.length; i++){

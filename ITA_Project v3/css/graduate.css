@@ -17,7 +17,7 @@ src: url("../fonts/NovaSquare/NovaSquare.ttf");
 }
 
 body{
-  background-color: #FBFCFF;
+  background-color: #DCF2F4;
   margin: 0;
 }
 
@@ -215,26 +215,26 @@ main{
 .thirdColumn{
   border-top: 1px black solid;
   font-size: 24px;
-  text-align: center;
+
 }
 
 .thirdColumn-container1{
   width: 50%;
-  text-align: center;
+
   border-right: 1px black solid;
 }
 
 .thirdColumn-container2{
   width: 50%;
   height: 100%;
+  text-align: center;
 }
 
-.thirdColumn-container2 p{
-  margin-top: 5%;
-}
+
 
 .thirdColumn p{
-  width: 60%;
+  margin-top: 20px;
+  width: 80%;
 }
 
 .first_part{
@@ -423,6 +423,10 @@ footer{
 .modal-content{
   background: none;
   border: none;
+}
+
+.workplace{
+  text-align: center;
 }
 
 

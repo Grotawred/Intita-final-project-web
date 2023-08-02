@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #FBFCFF;
+    background: #DCF2F4;
 }
 
 
@@ -502,6 +502,20 @@ a{
     color: #30CFD0;
   }
 
+  .nums{
+    font-size: 18px;
+    font-family: Monts;
+    gap: 10px;
+    margin-right: 30px;
+  }
+  
+  .nums p{
+    cursor: pointer;
+  }
+  
+  #num1{
+    color: #30CFD0;
+  }
 
 
 
