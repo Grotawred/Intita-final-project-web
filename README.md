@@ -17,17 +17,17 @@ Intita-final-project-web
 
 3. Install http-server on your machine
 		For this step you should move to the folder with our 		project and write this in your console:
-		npm install http-server –g
+		npm install http-server â€“g
 	
 4. Launch our project with http-server
 	After installing the plugin, you ought to write next:
 	http-server
-	Go to your browser and type localhost:8080.
+	Go to your browser and typeÂ localhost:8080.
 	Application should run
 Our team members:
-1. Volodymyr Ratynsky(MortCord) – team lead, full stack developer
-	2. Oleksnadra Mechanicheva – UI/UX designer
-	3. Grigoriy Vlasko – front end developer
+	1. Volodymyr Ratynsky(MortCord) â€“ team lead, full stack developer
+	2. Oleksnadra Mechanicheva â€“ UI/UX designer
+	3. Grigoriy Vlasko â€“ front end developer
 
 
 
