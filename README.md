@@ -27,9 +27,9 @@ If you want to run our project you need to complete these steps:
 	Application should run
 
 Our team members:
-	1. Volodymyr Ratynsky(MortCord) – team lead, full stack developer
-	2. Oleksnadra Mechanicheva – UI/UX designer
-	3. Grigoriy Vlasko(Grotawred) – front end developer
+1. Volodymyr Ratynsky(MortCord) – team lead, full stack developer
+2. Oleksnadra Mechanicheva – UI/UX designer
+3. Grigoriy Vlasko(Grotawred) – front end developer
 
 
 
