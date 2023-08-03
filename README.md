@@ -4,7 +4,7 @@ Welcome to our git repo of final INTITA's project. It is looks like an album of 
 
 Firstly, our project works on local server, so some features will not work without this one.
 
-Our project uses HTML, CSS and JavaScript. The design has been composed using Figma.
+Our project uses HTML, CSS and JavaScript. The design has been composed with Figma.
 
 If you want to run our project you need to complete these steps:
 
