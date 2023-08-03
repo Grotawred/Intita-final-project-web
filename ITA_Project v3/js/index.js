@@ -198,13 +198,14 @@ function changeEvent(el){
     document.getElementById('eventImg1').src="./img/campImg1.png";
     document.getElementById('eventImg2').src="./img/campImg2.png";
     document.getElementById('eventImg3').src="./img/campImg3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num1').style="color:#000";
-    document.getElementById('num2').style="color:#000";
+    document.getElementById('visNum1').innerHTML="02";
+    document.getElementById('visNum2').innerHTML="08";
+    document.getElementById('visNum3').innerHTML="21";
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','camp');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style="display:none";
   }
 
   if(el.id == "num2"){
@@ -213,13 +214,14 @@ function changeEvent(el){
     document.getElementById('eventImg1').src="./img/weekImg1.png";
     document.getElementById('eventImg2').src="./img/weekImg2.png";
     document.getElementById('eventImg3').src="./img/weekImg3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num1').style="color:#000";
-    document.getElementById('num3').style="color:#000";
+    document.getElementById('visNum1').innerHTML="12";
+    document.getElementById('visNum2').innerHTML="03";
+    document.getElementById('visNum3').innerHTML="23";
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','holiday');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style="display:none";
   }
 
   if(el.id == "num1"){
@@ -228,14 +230,19 @@ function changeEvent(el){
     document.getElementById('eventImg1').src="./img/slide.png";
     document.getElementById('eventImg2').src="./img/Slide2.png";
     document.getElementById('eventImg3').src="./img/slide3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num2').style="color:#000";
-    document.getElementById('num3').style="color:#000";
+    document.getElementById('visNum1').innerHTML="03";
+    document.getElementById('visNum2').innerHTML="12";
+    document.getElementById('visNum3').innerHTML="21";
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','prof');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style="display:none";
   }
+}
+
+function changeDis(){
+  document.getElementById('dateWindow').style="display:flex";
 }
 
 

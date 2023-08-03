@@ -17,7 +17,7 @@ src: url("../fonts/NovaSquare/NovaSquare.ttf");
 }
 
 body{
-  background-color: #DCF2F4;
+  background-color: #FBFCFF;
   margin: 0;
 }
 
@@ -423,6 +423,33 @@ footer{
 .modal-content{
   background: none;
   border: none;
+}
+
+modal-header{
+  border-bottom: none;
+}
+
+
+.cont{
+  border: none;
+  min-width: 1496px;
+  background-color: #DCF2F4;
+}
+
+.title-acad{
+  font-size: 48px;
+  font-family: Nova;
+  text-align: center;
+}
+
+.acad-body p{
+  font-size: 20px;
+  font-family: Monts;
+  width: 80%;
+}
+
+.acad-text{
+  width: 50%;
 }
 
 

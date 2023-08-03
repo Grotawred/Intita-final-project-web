@@ -10,7 +10,7 @@
 
 
 body{
-    background-color: #DCF2F4;
+    background-color: #FBFCFF;
 }
 
 .main-words{
@@ -182,14 +182,34 @@ body{
     border: none;
   }
 
-  .modal-body input{
-    border: none;
+  modal-header{
+    border-bottom: none;
   }
 
-  .modal-content{
-    background: none;
+
+  .cont{
     border: none;
+    min-width: 1496px;
+    background-color: #DCF2F4;
   }
+
+  .title-acad{
+    font-size: 48px;
+    font-family: Nova;
+    text-align: center;
+  }
+
+  .acad-body p{
+    font-size: 20px;
+    font-family: Monts;
+    width: 80%;
+  }
+
+  .acad-text{
+    width: 50%;
+  }
+
+
 
 
 
@@ -284,6 +304,12 @@ body{
   border-radius: 10px;
   color: #fff;
   font-family: Monts;
+  transition: background-color 0.2s;
+}
+
+.more_btn:hover{
+  background: #30CFD0;
+  color: #111524;
 }
 
 .swiper-vertical{
@@ -409,8 +435,8 @@ body{
 }
 
 .toCall:hover{
-  background: #111524;
-  color: #30CFD0;
+  background: #30CFD0;
+  color: #111524;
   border: none;
   cursor: pointer;
 }
@@ -906,6 +932,13 @@ mark{
   font-size: 24px;
   background: none;
   border-radius: 10px;
+  border: 2px #111524 solid;
+  transition: background-color 0.2s;
+}
+
+.send-time:hover{
+  background: #111524;
+  color: #30CFD0;
 }
 
 .but-soc-grad{
@@ -935,6 +968,12 @@ mark{
   font-size: 24px;
   background: none;
   border-radius: 10px;
+  border: 2px #111524 solid;
+  transition: background-color 0.2s;
+}
+
+.morebtn-grad:hover{
+  background: #111524;
 }
 
 .text-graduate{
@@ -1031,28 +1070,34 @@ mark{
 
 .diploma-btn{
   background: none;
-  border: 1px #000 solid;
+  border: 2px #30CFD0 solid;
   width: 186px;
   font-size: 24px;
   border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.diploma-btn:hover{
+  background: #30CFD0;
 }
 
 .more-stud-btn{
   background: none;
-  border: 1px #000 solid;
+  border: 2px #111524 solid;
   width: 186px;
   font-size: 24px;
   border-radius: 10px;
   color: #30CFD0;
+  transition: background-color 0.2s;
 }
 
-.stud-btn{
-  transition: border 0.2s;
+.more-stud-btn:hover{
+  background: #111524;
 }
 
-.stud-btn:hover{
-  border: 1px #30CFD0 solid;
-}
+
+
+
 
 .student-btns{
   gap: 39px;
@@ -1121,14 +1166,44 @@ mark{
   font-family: Monts;
   gap: 10px;
   margin-right: 60px;
+  margin-left: 50px;
 }
 
 .nums p{
   cursor: pointer;
 }
 
-#num1{
+.num{
   color: #30CFD0;
+}
+
+.dateWindow{
+  background: #30CFD0;
+  height: 44px;
+  font-size: 24px;
+  border-radius: 10px;
+  gap: 50px;
+  display: none;
+}
+
+.dateWindow div{
+  cursor: pointer;
+}
+
+.dateWindow div:first-child{
+  margin-left: 30px;
+}
+
+.dateWindow div:last-child{
+  margin-right: 30px;
+}
+
+.selNum{
+  color: #fff;
+}
+
+.date-container{
+  gap: 12px;
 }
 
 
