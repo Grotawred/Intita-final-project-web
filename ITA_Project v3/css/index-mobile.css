@@ -503,7 +503,7 @@ a{
   }
 
   .nums{
-    font-size: 18px;
+    font-size: 16px;
     font-family: Monts;
     gap: 10px;
     margin-right: 30px;
@@ -513,8 +513,33 @@ a{
     cursor: pointer;
   }
   
-  #num1{
+  .num{
     color: #30CFD0;
+  }
+
+  .dateWindow{
+    background: #30CFD0;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 16px;
+    gap: 7.7px;
+    display: none;
+  }
+
+  .dateWindow div:first-child{
+    margin-left: 30px;
+  }
+
+  .dateWindow div:last-child{
+    margin-right: 30px;
+  }
+
+  .selNum{
+    color: #fff;
+  }
+
+  .date-container{
+    gap: 5px;
   }
 
 

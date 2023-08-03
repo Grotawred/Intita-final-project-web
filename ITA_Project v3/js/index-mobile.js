@@ -136,31 +136,37 @@ function changeEvent(el){
   if(el.id == "num3"){
     document.getElementById('eventName').innerHTML="IT-camp";
     document.getElementById('eventDesc').innerHTML="- змістовний та активний відпочинок<br>- повноцінне оздоровлення<br>- різноманітні квести та веселощі";
-    document.getElementById('eventImg1').src="./img/campImg1.png";
-    document.getElementById('eventImg2').src="./img/campImg2.png";
-    document.getElementById('eventImg3').src="./img/campImg3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num1').style="color:#000";
-    document.getElementById('num2').style="color:#000";
+    document.getElementById('eventImg1').src="./img/campImg1-mob.png";
+    document.getElementById('eventImg2').src="./img/campImg2-mob.png";
+    document.getElementById('eventImg3').src="./img/campImg3-mob.png";
+
+    document.getElementById('showDate1').innerHTML='02'
+    document.getElementById('showDate2').innerHTML='08'
+    document.getElementById('showDate3').innerHTML='21'
+
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','camp');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style='display:none;'
   }
 
   if(el.id == "num2"){
     document.getElementById('eventName').innerHTML="Айтішний вікенд";
     document.getElementById('eventDesc').innerHTML="Чудове недільне свято від викладачів академії. На студентів чекала тепла компанія, смаколики та настільні ігри. Дякуємо усім, хто взяв участь та гарно провів час у нашому товаристві. Сподіваємось, ви завітаєте і на інші наші подальші заходи. ";
-    document.getElementById('eventImg1').src="./img/weekImg1.png";
-    document.getElementById('eventImg2').src="./img/weekImg2.png";
-    document.getElementById('eventImg3').src="./img/weekImg3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num1').style="color:#000";
-    document.getElementById('num3').style="color:#000";
+    document.getElementById('eventImg1').src="./img/weekImg1-mob.png";
+    document.getElementById('eventImg2').src="./img/weekImg2-mob.png";
+    document.getElementById('eventImg3').src="./img/weekImg3-mob.png";
+
+    document.getElementById('showDate1').innerHTML='12'
+    document.getElementById('showDate2').innerHTML='03'
+    document.getElementById('showDate3').innerHTML='23'
+
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','holiday');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style='display:none;';
   }
 
   if(el.id == "num1"){
@@ -169,12 +175,19 @@ function changeEvent(el){
     document.getElementById('eventImg1').src="./img/slide.png";
     document.getElementById('eventImg2').src="./img/Slide2.png";
     document.getElementById('eventImg3').src="./img/slide3.png";
-    el.style="color:#30CFD0";
-    document.getElementById('num2').style="color:#000";
-    document.getElementById('num3').style="color:#000";
+
+    document.getElementById('showDate1').innerHTML='03'
+    document.getElementById('showDate2').innerHTML='12'
+    document.getElementById('showDate3').innerHTML='21'
+
     document.getElementById('sliderMore').onclick = function(){
       localStorage.setItem('event','prof');
       window.location.href='event.html';
     }
+    document.getElementById('dateWindow').style='display:none;';
   }
+}
+
+function changeDisplay(){
+  document.getElementById('dateWindow').style='display:flex';
 }
