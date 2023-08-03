@@ -25,6 +25,7 @@ If you want to run our project you need to complete these steps:
 	http-server
 	Go to your browser and type localhost:8080.
 	Application should run
+
 Our team members:
 	1. Volodymyr Ratynsky(MortCord) – team lead, full stack developer
 	2. Oleksnadra Mechanicheva – UI/UX designer
