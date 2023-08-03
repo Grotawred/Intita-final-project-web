@@ -1,12 +1,14 @@
 Intita-final-project-web
 
-	Welcome to our git repo of final INTITA's project. It is looks like an album of students and graduates of this academy. We are students of this academy too.
+Welcome to our git repo of final INTITA's project. It is looks like an album of students and graduates of this academy. We are students of this academy too.
 
-	Firstly, our project works on local server, so some features will not work without this one.
+Firstly, our project works on local server, so some features will not work without this one.
 
-	Our project uses HTML, CSS and JavaScript. The design has been composed using Figma.
+Our project uses HTML, CSS and JavaScript. The design has been composed using Figma.
 
-	If you want to run our project you need to complete these steps:
+If you want to run our project you need to complete these steps:
+
+
 1. Install Git SCM and Node.js
 		You can do this by clicking on this link - https://git-scm.com/downloads
 		For Node.js - https://nodejs.org/en/download
