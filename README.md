@@ -4,13 +4,13 @@ Welcome to our git repo of final INTITA's project. It is looks like an album of 
 
 Firstly, our project works on local server, so some features will not work without this one.
 
-Our project uses HTML, CSS and JavaScript. The design has been composed using Figma.
+Our project uses HTML, CSS and JavaScript. The design has been composed with Figma.
 
 If you want to run our project you need to complete these steps:
 
 
 1. Install Git SCM and Node.js
-		You can do this by clicking on this link - https://git-scm.com/downloads For Node.js - https://nodejs.org/en/download
+		You can do this by clicking on this link - https://git-scm.com/downloads For Node.js - https://nodejs.org/en/download. Actually you can download a ZIP file from our repo... But Are you a programmer or what?
 
 3. Clone our project
 	Open console on your machine and write this:
