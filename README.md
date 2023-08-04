@@ -10,7 +10,7 @@ If you want to run our project you need to complete these steps:
 
 
 1. Install Git SCM and Node.js
-		You can do this by clicking on this link - https://git-scm.com/downloads For Node.js - https://nodejs.org/en/download
+		You can do this by clicking on this link - https://git-scm.com/downloads For Node.js - https://nodejs.org/en/download.Actually you can download a ZIP file from our repo... But Are you a programmer or what?
 
 3. Clone our project
 	Open console on your machine and write this:
