@@ -19,7 +19,7 @@
         <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
         <div class="main-words d-flex">
             <a href="index.html"><p class="mg lang" id="golovna">Головна</p></a>
-            <p data-bs-toggle="modal" data-bs-target="#acadModal" id="graduates" class="lang mg searchWord">Про академію</p>
+            <p data-bs-toggle="modal" data-bs-target="#acadModal" id="about" class="lang mg searchWord">Про академію</p>
             <a class="mg main-word"><p class="lang" id="graduates">Випускники</p></a>
             <a class="mg" href="index.html#student"><p class="lang" id="students">Студенти</p></a>
             <a class="mg" href="index.html#Contacts"><p class="lang" id="contacts">Контакти</p></a>
@@ -161,7 +161,7 @@
                 });
               </script>
             </div>
-            <img class="more_btn" src="./img/More.png" alt="moreBtn">
+            <img onclick="localStorage.setItem('event','prof');window.location.href='event.html'" class="more_btn" src="./img/More.png" alt="moreBtn">
             <div class="slider_text">
               <h1>ProfIT Day </h1>
               <p>- презентації передових компаній<br>
